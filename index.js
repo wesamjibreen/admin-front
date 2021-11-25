@@ -3,7 +3,7 @@ import initRouter from "./src/router";
 import {initStore} from "./src/store";
 import RootApp from "./src/RootApp.vue";
 import {createHead} from '@vueuse/head'
-// import {GlobalComponents} from "./src/components";
+import {GlobalComponents} from "./src/components";
 import {GlobalMixins} from "./src/mixins";
 
 
@@ -44,9 +44,9 @@ export default class App {
     }
 
     registerComponents() {
-        // Object.entries(GlobalComponents).forEach((value) => {
-        //     this.app.component(value[0], value[1]);
-        // });
+        Object.entries(GlobalComponents).forEach((value) => {
+            this.app.component(value[0], value[1]);
+        });
     }
 
     useMixins() {
