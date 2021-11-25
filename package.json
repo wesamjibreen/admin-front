@@ -9,32 +9,9 @@
   "author": "wesamjibreen",
   "license": "ISC",
   "devDependencies": {
-    "@iconify/vue": "^3.1.1",
-    "@vue/compiler-sfc": "^3.2.22",
-    "cross-env": "^7.0.3",
-    "laravel-mix": "^6.0.39",
-    "laravel-mix-merge-manifest": "^0.1.2",
-    "resolve-url-loader": "4.0.0",
-    "sass": "^1.43.4",
-    "sass-loader": "12.1.0"
+
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-classic": "^31.0.0",
-    "@ckeditor/ckeditor5-vue": "^2.0.1",
-    "@popperjs/core": "*",
-    "@vueform/multiselect": "^2.2.0",
-    "@vueuse/core": "^6.9.1",
-    "@vueuse/head": "^0.6.0",
-    "bulma-css-vars": "^0.7.0",
-    "gitart-vue-dialog": "^1.1.0",
-    "nprogress": "^0.2.0",
-    "tiny-emitter": "^2.1.0",
 
-
-    "vue": "^3.2.4",
-    "vue-loader": "^16.0.0-beta.8",
-    "vue-router": "^4.0.11",
-    "vue-underscore": "^0.1.4",
-    "vuex": "^4.0.2"
   }
 }
