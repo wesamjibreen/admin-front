@@ -13,10 +13,15 @@
   "keywords": [
     "vuejs"
   ],
-  "devDependencies": {
-    "@vue/compiler-sfc": "^3.2.22"
-  },
   "dependencies": {
+    "@iconify/vue": "^3.1.1",
+    "@vue/compiler-sfc": "^3.2.22",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.39",
+    "laravel-mix-merge-manifest": "^0.1.2",
+    "resolve-url-loader": "4.0.0",
+    "sass": "^1.43.4",
+    "sass-loader": "12.1.0",
     "@ckeditor/ckeditor5-build-classic": "^31.0.0",
     "@ckeditor/ckeditor5-vue": "^2.0.1",
     "@popperjs/core": "^2.10.2",
