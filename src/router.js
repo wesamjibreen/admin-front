@@ -2,10 +2,11 @@ import {createRouter, createWebHistory} from "vue-router";
 // import routes from './routes';
 import NProgress from 'nprogress'
 
+
 const initRouter = function (routes, base = "/") {
     const router = createRouter({
         base,
-        history: createWebHistory(base),
+        history: createWebHistory('/admin'),
         routes, // short for `routes: routes`
     });
     /**
@@ -17,7 +18,6 @@ const initRouter = function (routes, base = "/") {
     router.afterEach(() => {
         NProgress.done()
     });
-    return router;
 }
 
 export default initRouter;
