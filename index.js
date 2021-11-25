@@ -41,7 +41,6 @@ export default class App {
         this.app.use(createHead);
         this.app.use(this.router);
         this.app.use(this.store);
-
     }
 
     registerComponents() {
@@ -57,7 +56,7 @@ export default class App {
     }
 
     initRouter() {
-        this.router = initRouter(this.routes, "/company");
+        this.router = initRouter(this.routes, this.base);
     }
 
 
