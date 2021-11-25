@@ -56,7 +56,7 @@ export default class App {
     }
 
     initRouter() {
-        this.router = initRouter(this.routes, this.base);
+        this.router = initRouter(this.routes, `/${this.base}`);
     }
 
 
