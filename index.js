@@ -74,9 +74,7 @@ export default class App {
 
     useModules() {
         this.modules.forEach((module) => this.instance().use(module));
-        // this.instance().use(import( 'v-viewer'))
         this.app.use(VueViewer);
-        console.log('useeeeeee', this.config?.app?.map ?? {});
         this.app.use(VueGoogleMaps , this.config?.app?.map ?? {});
     }
 
