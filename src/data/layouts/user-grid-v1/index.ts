@@ -1,7 +1,7 @@
 export const users = [
   {
     id: 13,
-    avatar: '/images/avatars/svg/vuero-13.svg',
+    avatar: '/panel/images/avatars/svg/vuero-13.svg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Tara S.',
     fullName: 'Tara Svenson',
@@ -34,7 +34,7 @@ export const users = [
       },
       {
         id: 7,
-        avatar: '/images/avatars/svg/vuero-7.svg',
+        avatar: '/panel/images/avatars/svg/vuero-7.svg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -78,7 +78,7 @@ export const users = [
   },
   {
     id: 25,
-    avatar: '/images/avatars/svg/vuero-25.svg',
+    avatar: '/panel/images/avatars/svg/vuero-25.svg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Melany W.',
     fullName: 'Melany Wallace',
@@ -233,7 +233,7 @@ export const users = [
   {
     id: 9,
     avatar: '/images/avatars/9.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Anna B.',
     fullName: 'Anna Baker',
     initials: 'AB',
@@ -260,8 +260,8 @@ export const users = [
   },
   {
     id: 5,
-    avatar: '/images/avatars/svg/vuero-5.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-5.jpg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Mary L.',
     fullName: 'Mary Lebowski',
     initials: 'ML',
@@ -293,7 +293,7 @@ export const users = [
       },
       {
         id: 7,
-        avatar: '/images/avatars/svg/vuero-7.svg',
+        avatar: '/panel/images/avatars/svg/vuero-7.svg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -303,7 +303,7 @@ export const users = [
   {
     id: 32,
     avatar: '/images/avatars/32.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     fullName: 'Jonathan Krugger',
     initials: 'JK',
@@ -366,7 +366,7 @@ export const users = [
   {
     id: 38,
     avatar: '/images/avatars/38.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Christie D.',
     fullName: 'Christie Dallas',
     initials: 'CD',
@@ -429,7 +429,7 @@ export const users = [
   {
     id: 16,
     avatar: '/images/avatars/16.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     fullName: 'Jason Guarank',
     initials: 'JG',
@@ -457,7 +457,7 @@ export const users = [
   {
     id: 23,
     avatar: '/images/avatars/23.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     fullName: 'Irina Vierbovsky',
     initials: 'IV',
@@ -519,8 +519,8 @@ export const users = [
   },
   {
     id: 7,
-    avatar: '/images/avatars/svg/vuero-7.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-7.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Alice C.',
     fullName: 'Alice Carasca',
     initials: 'AC',
@@ -531,7 +531,7 @@ export const users = [
     team: [
       {
         id: 25,
-        avatar: '/images/avatars/svg/vuero-25.svg',
+        avatar: '/panel/images/avatars/svg/vuero-25.svg',
         name: 'Melany W.',
         initials: 'MW',
         color: 'success',
@@ -545,7 +545,7 @@ export const users = [
       },
       {
         id: 12,
-        avatar: '/images/avatars/svg/vuero-12.svg',
+        avatar: '/panel/images/avatars/svg/vuero-12.svg',
         name: 'Joshua S.',
         initials: 'JS',
         color: 'warning',
@@ -555,7 +555,7 @@ export const users = [
   {
     id: 22,
     avatar: '/images/avatars/22.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     fullName: 'Dwayne Hicks',
     initials: 'DH',

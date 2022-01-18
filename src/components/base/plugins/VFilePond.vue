@@ -1,6 +1,6 @@
-<script lang="ts">
-import type { PropType, ComponentPropsOptions, EmitsOptions } from 'vue'
-import type { FilePondEvent, FilePondOptions } from 'filepond'
+<script>
+// import type { PropType, ComponentPropsOptions, EmitsOptions } from 'vue'
+// import type { FilePondEvent, FilePondOptions } from 'filepond'
 import { onMounted, onUnmounted, ref, defineComponent, h } from 'vue'
 import * as FilePond from 'filepond'
 import FilePondPluginFileValidateSize from 'filepond-plugin-file-validate-size'
@@ -16,7 +16,7 @@ import 'filepond/dist/filepond.min.css'
 import 'filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css'
 import 'filepond-plugin-image-edit/dist/filepond-plugin-image-edit.min.css'
 
-type FilePondSize = undefined | 'small' | 'tiny'
+// type FilePondSize = undefined | 'small' | 'tiny'
 
 const plugins = [
   FilePondPluginFileValidateSize,
@@ -45,7 +45,7 @@ const types = {
 }
 
 // Setup initial prop types and update when plugins are added
-const getNativeConstructorFromType = (type: keyof typeof types) => {
+const getNativeConstructorFromType = (type) => {
   if (!type) {
     return String
   }
@@ -53,15 +53,15 @@ const getNativeConstructorFromType = (type: keyof typeof types) => {
   return types[type]
 }
 
-const _OptionTypes = FilePond.OptionTypes as Record<string, keyof typeof types>
+const _OptionTypes = FilePond.OptionTypes;
 
 // Activated props
-const propsOptions: ComponentPropsOptions = {}
+const propsOptions = {}
 
 // Events that need to be mapped to emitters
-const eventNames: EmitsOptions = []
+const eventNames = []
 
-const defaultOptions = FilePond.getOptions() as Record<string, any>
+const defaultOptions = FilePond.getOptions()
 
 for (const prop in _OptionTypes) {
   // don't add events to the props array
@@ -82,9 +82,9 @@ export default defineComponent({
   props: {
     ...propsOptions,
     size: {
-      type: String as PropType<FilePondSize>,
+      type: String ,
       default: undefined,
-      validator: (value: FilePondSize) => {
+      validator: (value) => {
         // The value must match one of these strings
         if ([undefined, 'small', 'tiny'].indexOf(value) === -1) {
           console.warn(
@@ -99,9 +99,9 @@ export default defineComponent({
   },
   emits: ['input', ...eventNames],
   setup(props, { emit }) {
-    const pond = ref<FilePond.FilePond>()
-    const inputElement = ref<HTMLInputElement>()
-    const pondOptions = Object.assign({}, { ...props }) as FilePondOptions
+    const pond = ref()
+    const inputElement = ref()
+    const pondOptions = Object.assign({}, { ...props })
 
     onMounted(() => {
       if (inputElement.value && FilePond.supported()) {
@@ -124,7 +124,7 @@ export default defineComponent({
         })
 
         for (const eventName of eventNames) {
-          const event = eventName as FilePondEvent
+          const event = eventName
           if (event) {
             pond.value.on(event, (...event) => {
               emit('input', pond.value ? pond.value.getFiles() : [])
@@ -137,7 +137,7 @@ export default defineComponent({
     onUnmounted(() => {
       if (pond.value) {
         for (const eventName of eventNames) {
-          const event = eventName as FilePondEvent
+          const event = eventName
           if (event) {
             pond.value.off(event, (event) => {
               emit(eventName, event)

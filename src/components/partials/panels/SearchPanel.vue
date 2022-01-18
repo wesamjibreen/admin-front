@@ -131,7 +131,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+                  <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user7" />
                   </template>
@@ -147,7 +147,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <VAvatar size="small" picture="/images/avatars/svg/vuero-13.svg" />
+                  <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-13.svg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>

@@ -5,12 +5,12 @@ const people = [
   {
     name: 'Alice Carasca',
     role: 'Software Engineer',
-    avatar: '/images/avatars/svg/vuero-5.jpg',
+    avatar: '/panel/images/avatars/svg/vuero-5.jpg',
   },
   {
     name: 'Mary Lebowski',
     role: 'Project Manager',
-    avatar: '/images/avatars/svg/vuero-5.jpg',
+    avatar: '/panel/images/avatars/svg/vuero-5.jpg',
   },
   {
     name: 'Ryan Brentman',

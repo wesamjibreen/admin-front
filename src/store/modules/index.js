@@ -1,12 +1,15 @@
-// import auth from "./auth.module";
-import form from "./form.module";
-import dialog from "./dialog.module";
-// import setting from "./setting.module";
+import auth from "./auth.module";
+import setting from "./setting.module";
+// import form from "./form.module";
+// import dialog from "./dialog.module";
 
-const modules = {
-    dialog,
-    // auth,
-    form,
-    // setting
+const buildModules = function ({base}) {
+    return {
+        auth: auth(base),
+        setting
+    };
 };
-export default modules;
+
+export {
+    buildModules
+};

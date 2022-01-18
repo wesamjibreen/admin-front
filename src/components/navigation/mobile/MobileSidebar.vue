@@ -1,41 +1,30 @@
-<script setup>
-    import {withDefaults} from "vue";
-
-    const emit = defineEmits()
-    const props = withDefaults(
-        defineProps(),
-        {
-            isOpen: false
-        }
-    )
-</script>
-
 <template>
-    <div :class="[props.isOpen && 'is-active']" class="mobile-main-sidebar">
+    <div :class="[isOpen && 'is-active']" class="mobile-main-sidebar">
         <div class="inner">
             <ul class="icon-side-menu">
                 <slot name="links">
                     <li>
                         <a aria-label="Back to homepage" href="/">
-                            <i
-                                    aria-hidden="true"
-                                    class="iconify"
-                                    data-icon="feather:activity"
-                            ></i>
+                            <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
                         </a>
                     </li>
                 </slot>
             </ul>
-
             <ul class="bottom-icon-side-menu">
                 <slot name="bottom-links"></slot>
             </ul>
         </div>
     </div>
 
-    <div v-if="props.isOpen" class="mobile-overlay" @click="emit('toggle')"></div>
+    <div v-if="isOpen" class="mobile-overlay" @click="$emit('toggle')"></div>
 </template>
-
+<script>
+    export default {
+        props: {
+            isOpen: false,
+        }
+    }
+</script>
 <style lang="scss">
     @import '../../../scss/layout/_sidebar.scss';
     @import '../../../scss/layout/_sidebar-mobile.scss';

@@ -10,7 +10,7 @@ export const optionsSingle = [
 export const flexRowsOrders = [
   {
     id: 0,
-    picture: '/images/avatars/svg/vuero-1.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
     username: 'Erik K.',
     orderId: '#158456',
     date: 'Oct 31, 2020',
@@ -30,7 +30,7 @@ export const flexRowsOrders = [
   },
   {
     id: 2,
-    picture: '/images/avatars/svg/vuero-25.svg',
+    picture: '/panel/images/avatars/svg/vuero-25.svg',
     username: 'Melany W.',
     orderId: '#155848',
     date: 'Oct 31, 2020',
@@ -40,7 +40,7 @@ export const flexRowsOrders = [
   },
   {
     id: 3,
-    picture: '/images/avatars/svg/vuero-12.svg',
+    picture: '/panel/images/avatars/svg/vuero-12.svg',
     username: 'Joshua S.',
     orderId: '#154736',
     date: 'Oct 30, 2020',
@@ -50,7 +50,7 @@ export const flexRowsOrders = [
   },
   {
     id: 4,
-    picture: '/images/avatars/svg/vuero-13.svg',
+    picture: '/panel/images/avatars/svg/vuero-13.svg',
     username: 'Tara S.',
     orderId: '#158315',
     date: 'Oct 30, 2020',

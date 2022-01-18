@@ -1,7 +1,7 @@
 export const avatarStack1 = [
   {
     id: 12,
-    picture: '/images/avatars/svg/vuero-12.svg',
+    picture: '/panel/images/avatars/svg/vuero-12.svg',
     initials: 'JS',
     color: 'info',
   },
@@ -22,7 +22,7 @@ export const avatarStack1 = [
 export const avatarStack2 = [
   {
     id: 7,
-    picture: '/images/avatars/svg/vuero-7.svg',
+    picture: '/panel/images/avatars/svg/vuero-7.svg',
     initials: 'AC',
     color: 'info',
   },
@@ -55,7 +55,7 @@ export const avatarStack3 = [
   },
   {
     id: 8,
-    picture: '/images/avatars/svg/vuero-1.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
     initials: 'EK',
     color: 'warning',
   },

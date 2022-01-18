@@ -8,6 +8,6 @@
     }
 </script>
 
-<style scoped>
-
+<style>
+    @import '~notyf/notyf.min.css';
 </style>

@@ -8,7 +8,7 @@ export const flexRowsBasic = [
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -20,13 +20,13 @@ export const flexRowsBasic = [
       },
       {
         id: 2,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -68,7 +68,7 @@ export const flexRowsBasic = [
       },
       {
         id: 9,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -83,7 +83,7 @@ export const flexRowsBasic = [
     contacts: [
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         initials: 'TS',
         color: 'info',
       },
@@ -98,7 +98,7 @@ export const flexRowsBasic = [
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -110,7 +110,7 @@ export const flexRowsBasic = [
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -123,15 +123,15 @@ export const flexRowsAdvanced = [
     id: 0,
     username: 'Erik K.',
     position: 'Product Manager',
-    picture: '/images/avatars/svg/vuero-1.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Software',
     status: 'Active',
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -143,13 +143,13 @@ export const flexRowsAdvanced = [
       },
       {
         id: 2,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -166,7 +166,7 @@ export const flexRowsAdvanced = [
     username: 'Jimmy H.',
     position: 'Project Manager',
     picture: '/images/avatars/22.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Business',
     status: 'New',
@@ -183,8 +183,8 @@ export const flexRowsAdvanced = [
     id: 2,
     username: 'Melany W.',
     position: 'Web Developer',
-    picture: '/images/avatars/svg/vuero-25.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-25.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'San Jose, CA',
     industry: 'Design',
     status: 'Active',
@@ -197,7 +197,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 9,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -207,15 +207,15 @@ export const flexRowsAdvanced = [
     id: 3,
     username: 'Joshua S.',
     position: 'Backend Developer',
-    picture: '/images/avatars/svg/vuero-12.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-12.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Accounting',
     status: 'Disabled',
     contacts: [
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         initials: 'TS',
         color: 'info',
       },
@@ -225,15 +225,15 @@ export const flexRowsAdvanced = [
     id: 4,
     username: 'Tina C.',
     position: 'Business Analyst',
-    picture: '/images/avatars/svg/vuero-13.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-13.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Finance',
     status: 'Suspended',
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -245,7 +245,7 @@ export const flexRowsAdvanced = [
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },

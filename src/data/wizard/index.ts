@@ -57,7 +57,7 @@ export const users = [
     name: 'Yasseene Amzi',
   },
   {
-    picture: '/images/avatars/svg/vuero-5.jpg',
+    picture: '/panel/images/avatars/svg/vuero-5.jpg',
     name: 'Mary Lebowski',
   },
   {

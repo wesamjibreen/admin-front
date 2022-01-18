@@ -9,7 +9,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
       },
     ],
   },
@@ -21,7 +21,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'info',
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'danger',
-        picture: '/images/avatars/svg/vuero-12.svg',
+        picture: '/panel/images/avatars/svg/vuero-12.svg',
       },
       {
         color: undefined,
@@ -53,7 +53,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'success',
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
       },
     ],
   },
@@ -77,7 +77,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -89,7 +89,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'success',
-        picture: '/images/avatars/svg/vuero-12.svg',
+        picture: '/panel/images/avatars/svg/vuero-12.svg',
       },
     ],
   },
@@ -116,7 +116,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'primary',
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
       },
     ],
   },

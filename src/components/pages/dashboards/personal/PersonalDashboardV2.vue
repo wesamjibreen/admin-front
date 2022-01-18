@@ -23,8 +23,8 @@ const democheck = ref(['value_2'])
       <div class="column is-12">
         <div class="dashboard-header">
           <VAvatar
-            picture="/images/avatars/svg/vuero-1.svg"
-            badge="/images/icons/flags/united-states-of-america.svg"
+            picture="/panel/images/avatars/svg/vuero-1.svg"
+            badge="/panel/images/icons/flags/united-states-of-america.svg"
             size="xl"
           />
           <div class="user-meta is-dark-bordered-12">
@@ -210,7 +210,7 @@ const democheck = ref(['value_2'])
               </li>
               <li>
                 <tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                  <VAvatar picture="/images/avatars/svg/vuero-13.svg" />
+                  <VAvatar picture="/panel/images/avatars/svg/vuero-13.svg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>

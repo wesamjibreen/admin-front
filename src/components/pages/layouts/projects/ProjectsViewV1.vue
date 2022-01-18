@@ -130,11 +130,11 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 size="small"
                 :limit="3"
                 :avatars="[
-                  { picture: '/images/avatars/svg/vuero-7.svg' },
+                  { picture: '/panel/images/avatars/svg/vuero-7.svg' },
                   { color: 'info', initials: 'JD' },
-                  { picture: '/images/avatars/svg/vuero-12.svg' },
-                  { picture: '/images/avatars/svg/vuero-12.svg' },
-                  { picture: '/images/avatars/svg/vuero-12.svg' },
+                  { picture: '/panel/images/avatars/svg/vuero-12.svg' },
+                  { picture: '/panel/images/avatars/svg/vuero-12.svg' },
+                  { picture: '/panel/images/avatars/svg/vuero-12.svg' },
                 ]"
               />
             </div>
@@ -189,7 +189,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 size="small"
                 :avatars="[
                   { color: 'success', initials: 'BT' },
-                  { picture: '/images/avatars/svg/vuero-1.svg' },
+                  { picture: '/panel/images/avatars/svg/vuero-1.svg' },
                 ]"
               />
             </div>
@@ -216,7 +216,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
               <VAvatarStack
                 class="is-pushed-mobile"
                 size="small"
-                :avatars="[{ picture: '/images/avatars/svg/vuero-13.svg' }]"
+                :avatars="[{ picture: '/panel/images/avatars/svg/vuero-13.svg' }]"
               />
             </div>
             <div class="flex-table-cell cell-end" data-th="Actions">

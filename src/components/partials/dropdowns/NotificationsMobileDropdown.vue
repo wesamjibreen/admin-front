@@ -37,7 +37,7 @@ const dropdown = useDropdown(dropdownElement)
                 <img
                   class="user-photo"
                   alt=""
-                  src="/images/avatars/svg/vuero-4.svg"
+                  src="/panel/images/avatars/svg/vuero-4.svg"
                   @error.once="
                     (event) => useViaPlaceholderError(event, '150x150')
                   "
@@ -57,7 +57,7 @@ const dropdown = useDropdown(dropdownElement)
                 <img
                   class="user-photo"
                   alt=""
-                  src="/images/avatars/svg/vuero-2.svg"
+                  src="/panel/images/avatars/svg/vuero-2.svg"
                   @error.once="
                     (event) => useViaPlaceholderError(event, '150x150')
                   "
@@ -77,7 +77,7 @@ const dropdown = useDropdown(dropdownElement)
                 <img
                   class="user-photo"
                   alt=""
-                  src="/images/avatars/svg/vuero-5.svg"
+                  src="/panel/images/avatars/svg/vuero-5.svg"
                   @error.once="
                     (event) => useViaPlaceholderError(event, '150x150')
                   "
@@ -97,7 +97,7 @@ const dropdown = useDropdown(dropdownElement)
                 <img
                   class="user-photo"
                   alt=""
-                  src="/images/avatars/svg/vuero-9.svg"
+                  src="/panel/images/avatars/svg/vuero-9.svg"
                   @error.once="
                     (event) => useViaPlaceholderError(event, '150x150')
                   "

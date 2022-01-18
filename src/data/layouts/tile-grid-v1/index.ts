@@ -23,8 +23,8 @@ export const users = [
   },
   {
     id: 8,
-    picture: '/images/avatars/svg/vuero-1.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Erik K.',
     initials: 'EK',
     color: 'h-purple',
@@ -34,7 +34,7 @@ export const users = [
   },
   {
     id: 7,
-    picture: '/images/avatars/svg/vuero-7.svg',
+    picture: '/panel/images/avatars/svg/vuero-7.svg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Alice C.',
     initials: 'AC',
@@ -46,7 +46,7 @@ export const users = [
   {
     id: 122,
     picture: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Betty T.',
     initials: 'BT',
     color: 'warning',
@@ -57,7 +57,7 @@ export const users = [
   {
     id: 23,
     picture: '/images/avatars/23.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     initials: 'IV',
     color: 'info',
@@ -78,7 +78,7 @@ export const users = [
   },
   {
     id: 25,
-    picture: '/images/avatars/svg/vuero-25.svg',
+    picture: '/panel/images/avatars/svg/vuero-25.svg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Melany W.',
     initials: 'MW',
@@ -123,7 +123,7 @@ export const users = [
   {
     id: 124,
     picture: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Alan T.',
     initials: 'AT',
     color: 'success',
@@ -134,7 +134,7 @@ export const users = [
   {
     id: 120,
     picture: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Sara C.',
     initials: 'SC',
     color: 'h-purple',
@@ -145,7 +145,7 @@ export const users = [
   {
     id: 32,
     picture: '/images/avatars/32.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     initials: 'JK',
     color: 'info',
@@ -189,7 +189,7 @@ export const users = [
   {
     id: 16,
     picture: '/images/avatars/16.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     initials: 'JG',
     color: 'danger',
@@ -211,7 +211,7 @@ export const users = [
   {
     id: 22,
     picture: '/images/avatars/22.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     initials: 'DH',
     color: 'info',
@@ -221,7 +221,7 @@ export const users = [
   },
   {
     id: 13,
-    picture: '/images/avatars/svg/vuero-13.svg',
+    picture: '/panel/images/avatars/svg/vuero-13.svg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Tara S.',
     initials: 'TS',
@@ -288,7 +288,7 @@ export const users = [
   {
     id: 10,
     picture: '/images/avatars/10.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Henry G.',
     initials: 'HG',
     color: 'danger',
@@ -299,7 +299,7 @@ export const users = [
   {
     id: 18,
     picture: '/images/avatars/18.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Esteban C.',
     initials: 'EC',
     color: 'success',

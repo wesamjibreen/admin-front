@@ -5,7 +5,7 @@ import { useStorage } from '@vueuse/core'
 
 import { activePanel } from '../../../state/activePanelState'
 
-const { locale, t } = useI18n()
+const { locale, t } = useI18n();
 import {Icon} from '@iconify/vue';
 defineComponent(Icon);
 /**
@@ -56,7 +56,7 @@ watch(locale, () => {
               />
               <div class="language-option-inner">
                 <img
-                  src="/images/icons/flags/united-states-of-america.svg"
+                  src="/panel/images/icons/flags/united-states-of-america.svg"
                   alt=""
                 />
                 <div class="indicator">
@@ -179,12 +179,12 @@ watch(locale, () => {
         <div class="img-wrap has-text-centered">
           <img
             class="light-image"
-            src="/assets/illustrations/right-panel/languages.svg"
+            src="/panel/images/illustrations/right-panel/languages.svg"
             alt=""
           />
           <img
             class="dark-image"
-            src="/assets/illustrations/right-panel/languages-dark.svg"
+            src="/panel/images/illustrations/right-panel/languages-dark.svg"
             alt=""
           />
         </div>

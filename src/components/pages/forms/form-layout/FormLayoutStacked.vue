@@ -182,7 +182,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
+                        <VAvatar picture="/panel/images/avatars/svg/vuero-1.svg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user8" />
                         </template>
@@ -226,7 +226,7 @@ const isStuck = computed(() => {
                         interactive
                         placement="top-start"
                       >
-                        <VAvatar picture="/images/avatars/svg/vuero-7.svg" />
+                        <VAvatar picture="/panel/images/avatars/svg/vuero-7.svg" />
                         <template #content>
                           <UserPopoverContent :user="popovers.user7" />
                         </template>
@@ -373,22 +373,22 @@ const isStuck = computed(() => {
                         {
                           name: 'Erik K.',
                           value: 'eric',
-                          icon: '/images/avatars/svg/vuero-1.svg',
+                          icon: '/panel/images/avatars/svg/vuero-1.svg',
                         },
                         {
                           name: 'Joshua S.',
                           value: 'joshua',
-                          icon: '/images/avatars/svg/vuero-12.svg',
+                          icon: '/panel/images/avatars/svg/vuero-12.svg',
                         },
                         {
                           name: 'Melany W.',
                           value: 'melany',
-                          icon: '/images/avatars/svg/vuero-25.svg',
+                          icon: '/panel/images/avatars/svg/vuero-25.svg',
                         },
                         {
                           name: 'Alice C.',
                           value: 'alice',
-                          icon: '/images/avatars/svg/vuero-7.svg',
+                          icon: '/panel/images/avatars/svg/vuero-7.svg',
                         },
                         {
                           name: 'Esteban C.',

@@ -114,7 +114,7 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/svg/vuero-13.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-13.svg' },
                     { picture: '/images/avatars/11.jpg' },
                   ]"
                 />
@@ -150,15 +150,15 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/svg/vuero-7.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-7.svg' },
                     { picture: '/images/avatars/9.jpg' },
                     { color: 'info', initials: 'JD' },
-                    { picture: '/images/avatars/svg/vuero-12.svg' },
-                    { picture: '/images/avatars/svg/vuero-1.svg' },
-                    { picture: '/images/avatars/svg/vuero-25.svg' },
-                    { picture: '/images/avatars/svg/vuero-25.svg' },
-                    { picture: '/images/avatars/svg/vuero-25.svg' },
-                    { picture: '/images/avatars/svg/vuero-25.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-12.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-25.svg' },
                   ]"
                 />
 
@@ -227,9 +227,9 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/svg/vuero-1.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-1.svg' },
                     { picture: '/images/avatars/22.jpg' },
-                    { picture: '/images/avatars/svg/vuero-12.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-12.svg' },
                     { picture: '/images/avatars/10.jpg' },
                     { picture: '/images/avatars/26.jpg' },
                   ]"
@@ -266,9 +266,9 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/svg/vuero-13.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-13.svg' },
                     { picture: '/images/avatars/11.jpg' },
-                    { picture: '/images/avatars/svg/vuero-1.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-1.svg' },
                     { picture: '/images/avatars/22.jpg' },
                   ]"
                 />
@@ -305,7 +305,7 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/svg/vuero-13.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-13.svg' },
                     { picture: '/images/avatars/11.jpg' },
                   ]"
                 />
@@ -341,7 +341,7 @@ const filterProjects = ref(0)
                 <VAvatarStack
                   size="small"
                   :avatars="[
-                    { picture: '/images/avatars/svg/vuero-13.svg' },
+                    { picture: '/panel/images/avatars/svg/vuero-13.svg' },
                     { picture: '/images/avatars/16.jpg' },
                     { picture: '/images/avatars/10.jpg' },
                     { picture: '/images/avatars/9.jpg' },

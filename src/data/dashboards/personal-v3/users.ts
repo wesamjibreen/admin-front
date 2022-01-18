@@ -1,7 +1,7 @@
 export const userStack = [
   {
     id: 5,
-    picture: '/images/avatars/svg/vuero-5.jpg',
+    picture: '/panel/images/avatars/svg/vuero-5.jpg',
     initials: 'ML',
     color: 'info',
   },

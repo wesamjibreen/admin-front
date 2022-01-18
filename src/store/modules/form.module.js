@@ -1,9 +1,12 @@
-const state = () => ({});
+const state = () => ({
+    errors: {}
+});
 export const BUSY_FIELDS = "busyFields";
 
 // mutation types
 export const SET_INPUT = "setInput";
 export const SET_FORM = "setForm";
+export const SET_ERRORS = "setErrors";
 export const EMPTY_FORM = "emptyForm";
 export const SET_BUSY_FIELDS = "setBusyFields";
 
@@ -29,13 +32,11 @@ const getters = {
 };
 
 const actions = {
-    [SUBMIT_FORM](context, {_this, endPoint}) {
+    [SUBMIT_FORM](context, {formContext, endPoint, data}) {
         return new Promise((resolve, reject) => {
-            _this.request(
+            formContext.request(
                 endPoint,
-                {
-                    ...context.state
-                },
+                data,
                 function ({data}) {
                     resolve(data);
                 },
@@ -50,25 +51,22 @@ const actions = {
 
 const mutations = {
     [SET_INPUT](state, {model, value, locale}) {
-        // console.log('model', model, value);
         if (locale) {
             if (!state[model])
                 state[model] = {};
             state[model][locale] = value;
         } else
             state[model] = value;
-
-        // alert('SET_INPUT');
-        // console.log("SET_INPUT", model, value, state[model]);
-        // state[model] = value;
-        // window.app.$set(state, model, value);
-        // _.set(state, model, value);
-        // window.$vm.$set(state, model, value);
     },
 
     [SET_FORM](state, form) {
         Object.assign(state, form);
     },
+
+    [SET_ERRORS](state, errors) {
+        state.errors = errors ?? {};
+    },
+
     [EMPTY_FORM](state, _this) {
         Object.assign(
             state,
@@ -81,17 +79,7 @@ const mutations = {
                 {}
             )
         );
-        // _.assign(state, Object.entries(state).map(function () {
-        //     return undefined;
-        // }));
-        // console.log('EMPTY_FORM',  arr, state);
-
-        // Object.keys(state).forEach(element => {
-        //     if (element != "type" && element != BUSY_FIELDS) {
-        //         window.$vm.$set(state, element, null);
-        //     }
-        // });
-        _this.$root.$emit("form-data-emptied", _this.formModule);
+        Bus.emit("form-data-emptied", _this.formModule);
     },
     [SET_BUSY_FIELDS](state, value) {
         window.$vm.$set(state, BUSY_FIELDS, value);

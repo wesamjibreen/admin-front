@@ -9,7 +9,7 @@ const props = withDefaults(
   {
     title: 'Design Project',
     user: 'Alice C.',
-    picture: '/images/avatars/svg/vuero-7.svg',
+    picture: '/panel/images/avatars/svg/vuero-7.svg',
     time: '28 minutes ago',
   }
 )

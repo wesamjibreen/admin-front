@@ -2,8 +2,8 @@
 export const popovers = {
   user5: {
     id: 5,
-    avatar: '/images/avatars/svg/vuero-5.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-5.jpg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Mary L.',
     fullName: 'Mary Lebowski',
     initials: 'ML',
@@ -14,8 +14,8 @@ export const popovers = {
   },
   user7: {
     id: 7,
-    avatar: '/images/avatars/svg/vuero-7.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-7.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Alice C.',
     fullName: 'Alice Carasca',
     initials: 'AC',
@@ -26,8 +26,8 @@ export const popovers = {
   },
   user8: {
     id: 8,
-    avatar: '/images/avatars/svg/vuero-1.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-1.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Erik K.',
     fullName: 'Erik Kovalsky',
     initials: 'EK',
@@ -39,7 +39,7 @@ export const popovers = {
   user9: {
     id: 9,
     avatar: '/images/avatars/9.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Anna B.',
     fullName: 'Anna Baker',
     initials: 'AB',
@@ -51,7 +51,7 @@ export const popovers = {
   user10: {
     id: 10,
     avatar: '/images/avatars/10.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Henry G.',
     fullName: 'Henry Grobstone',
     initials: 'HG',
@@ -74,8 +74,8 @@ export const popovers = {
   },
   user12: {
     id: 12,
-    avatar: '/images/avatars/svg/vuero-12.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-12.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Joshua S.',
     fullName: 'Joshua Stevens',
     initials: 'JS',
@@ -86,8 +86,8 @@ export const popovers = {
   },
   user13: {
     id: 13,
-    avatar: '/images/avatars/svg/vuero-13.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-13.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Tara S.',
     fullName: 'Tara Svenson',
     initials: 'TS',
@@ -123,7 +123,7 @@ export const popovers = {
   user16: {
     id: 16,
     avatar: '/images/avatars/16.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Jason G.',
     fullName: 'Jason Guarank',
     initials: 'JG',
@@ -135,7 +135,7 @@ export const popovers = {
   user18: {
     id: 18,
     avatar: '/images/avatars/18.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Esteban C.',
     fullName: 'Esteban Castellanos',
     initials: 'EC',
@@ -171,7 +171,7 @@ export const popovers = {
   user22: {
     id: 22,
     avatar: '/images/avatars/22.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     fullName: 'Dwayne Hicks',
     initials: 'DH',
@@ -183,7 +183,7 @@ export const popovers = {
   user23: {
     id: 23,
     avatar: '/images/avatars/23.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Irina V.',
     fullName: 'Irina Vierbovsky',
     initials: 'IV',
@@ -206,8 +206,8 @@ export const popovers = {
   },
   user25: {
     id: 25,
-    avatar: '/images/avatars/svg/vuero-25.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    avatar: '/panel/images/avatars/svg/vuero-25.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Melany W.',
     fullName: 'Melany Wallace',
     initials: 'MW',
@@ -267,7 +267,7 @@ export const popovers = {
   user31: {
     id: 31,
     avatar: '/images/avatars/31.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Yasseen A.',
     fullName: 'Yasseen Amzi',
     initials: 'YA',
@@ -279,7 +279,7 @@ export const popovers = {
   user32: {
     id: 32,
     avatar: '/images/avatars/32.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Jonathan K.',
     fullName: 'Jonathan Krugger',
     initials: 'JK',
@@ -291,7 +291,7 @@ export const popovers = {
   user33: {
     id: 33,
     avatar: '/images/avatars/33.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Harvey M.',
     fullName: 'Harvey Miller',
     initials: 'HM',
@@ -339,7 +339,7 @@ export const popovers = {
   user38: {
     id: 38,
     avatar: '/images/avatars/38.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Christie D.',
     fullName: 'Christie Dallas',
     initials: 'CD',
@@ -351,7 +351,7 @@ export const popovers = {
   user39: {
     id: 39,
     avatar: '/images/avatars/39.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Alejandro B.',
     fullName: 'Alejandro Badajoz',
     initials: 'AB',
@@ -375,7 +375,7 @@ export const popovers = {
   user120: {
     id: 120,
     avatar: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Sara C.',
     fullName: 'Sara Connor',
     initials: 'SC',
@@ -387,7 +387,7 @@ export const popovers = {
   user121: {
     id: 121,
     avatar: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Naomi L.',
     fullName: 'Naomi Liversky',
     initials: 'NL',
@@ -399,7 +399,7 @@ export const popovers = {
   user122: {
     id: 122,
     avatar: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Betty T.',
     fullName: 'Betty Trejo',
     initials: 'BT',
@@ -411,7 +411,7 @@ export const popovers = {
   user123: {
     id: 123,
     avatar: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'John D.',
     fullName: 'John Daniels',
     initials: 'JD',
@@ -423,7 +423,7 @@ export const popovers = {
   user124: {
     id: 124,
     avatar: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     username: 'Alan T.',
     fullName: 'Alan Thorne',
     initials: 'AT',

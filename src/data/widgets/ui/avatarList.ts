@@ -6,12 +6,12 @@ export const avatarList = [
   },
   {
     id: 1,
-    picture: '/images/avatars/svg/vuero-7.svg',
+    picture: '/panel/images/avatars/svg/vuero-7.svg',
     name: 'Alice C.',
   },
   {
     id: 2,
-    picture: '/images/avatars/svg/vuero-1.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
     name: 'Erik K.',
   },
 ]
@@ -25,13 +25,13 @@ export const avatarListCreative = [
   },
   {
     id: 1,
-    picture: '/images/avatars/svg/vuero-7.svg',
+    picture: '/panel/images/avatars/svg/vuero-7.svg',
     name: 'Alice C.',
     color: 'purple',
   },
   {
     id: 2,
-    picture: '/images/avatars/svg/vuero-1.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
     name: 'Erik K.',
     color: 'green',
   },

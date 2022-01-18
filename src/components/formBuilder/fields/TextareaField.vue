@@ -1,42 +1,38 @@
 <template>
-    <!--<ValidationProvider :vid="model$" :name="model$" v-slot="{ invalid , errors , validated}" :rules="rules$">-->
-    <!--<b-form-input :class="{'form-control' :true , 'is-invalid' : invalid && validated  }" v-model="input"-->
-    <!--:name="model$" :type="type$"></b-form-input>-->
-
-    <!--:class="{'form-control' :true , 'is-invalid' : invalid && validated  }"-->
-    <textarea :name="model$"
-              v-model="input"
-              class="textarea"
-              rows="4"
-              :placeholder="placeholder$"
-              autocomplete="off"
-              autocapitalize="off"
-              spellcheck="true"
-    ></textarea>
-    <!--<c-error :invalid="invalid" :validated="validated" :errors="errors" :properties="properties"/>-->
-    <!--</ValidationProvider>-->
+    <div :class="{'field-container' : true, 'is-invalid' : errorMessage && meta.touched}">
+        <VeeField v-model="input" :name="model$" v-slot="{ field  }">
+                <textarea :name="model$"
+                          v-bind="field"
+                          :class="{'textarea' : true}"
+                          rows="4"
+                          :placeholder="placeholder$"
+                          autocomplete="off"
+                          autocapitalize="off"
+                          spellcheck="true"></textarea>
+        </VeeField>
+        <span class="invalid" v-if="errorMessage && meta.touched">
+            {{ errorMessage }}
+        </span>
+    </div>
 </template>
 
+
 <script>
-    import input from "../mixins/input"
+    import input from "../mixins/input";
+    import {useInputField} from "../composable/useInputField";
 
     export default {
         name: "TextareaField",
         mixins: [input],
-        computed: {
-            defaultValue() {
-                /**
-                 * computed property returns default input value
-                 * used to init input by this value
-                 *
-                 * @author WeSSaM
-                 */
-                return '';
-            },
-        }
+        setup(props) {
+            return {
+                ...useInputField(props)
+            };
+        },
     };
 </script>
 
-<style scoped>
+<style>
 
 </style>
+

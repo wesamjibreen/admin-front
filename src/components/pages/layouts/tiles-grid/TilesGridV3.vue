@@ -385,7 +385,7 @@ const optionsSingle = [
                 </div>
                 <div class="tile-meta">
                   <VAvatar
-                    picture="/images/avatars/svg/vuero-1.svg"
+                    picture="/panel/images/avatars/svg/vuero-1.svg"
                     size="small"
                   />
                   <div class="meta-inner">

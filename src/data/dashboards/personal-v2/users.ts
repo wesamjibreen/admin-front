@@ -46,13 +46,13 @@ export const avatarStack3 = [
 export const avatarStack4 = [
   {
     id: 13,
-    picture: '/images/avatars/svg/vuero-13.svg',
+    picture: '/panel/images/avatars/svg/vuero-13.svg',
     initials: 'TS',
     color: 'info',
   },
   {
     id: 25,
-    picture: '/images/avatars/svg/vuero-25.svg',
+    picture: '/panel/images/avatars/svg/vuero-25.svg',
     initials: 'MW',
     color: 'success',
   },

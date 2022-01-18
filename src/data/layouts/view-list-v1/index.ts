@@ -6,8 +6,8 @@ export const users = [
     role: 'Project Manager',
     roleColor: 'primary',
     medias: {
-      avatar: '/images/avatars/svg/vuero-5.jpg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-5.jpg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 14,
@@ -16,7 +16,7 @@ export const users = [
     },
     teams: [
       { picture: '/images/avatars/9.jpg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
     ],
   },
   {
@@ -35,7 +35,7 @@ export const users = [
       posts: 5,
     },
     teams: [
-      { picture: '/images/avatars/svg/vuero-12.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-12.svg' },
       { picture: '/images/avatars/22.jpg' },
       { picture: '/images/avatars/40.jpg' },
     ],
@@ -47,8 +47,8 @@ export const users = [
     role: 'Product Manager',
     roleColor: 'secondary',
     medias: {
-      avatar: '/images/avatars/svg/vuero-1.svg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-1.svg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 14,
@@ -56,7 +56,7 @@ export const users = [
       posts: 16,
     },
     teams: [
-      { picture: '/images/avatars/svg/vuero-7.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-7.svg' },
       { picture: '/images/avatars/23.jpg' },
     ],
   },
@@ -77,13 +77,13 @@ export const users = [
     },
     teams: [
       { picture: '/images/avatars/18.jpg' },
-      { picture: '/images/avatars/svg/vuero-13.svg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-13.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
     ],
   },
   {
@@ -111,7 +111,7 @@ export const users = [
     roleColor: 'green',
     medias: {
       avatar: '/images/avatars/9.jpg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 19,
@@ -119,8 +119,8 @@ export const users = [
       posts: 12,
     },
     teams: [
-      { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
     ],
   },
   {
@@ -131,7 +131,7 @@ export const users = [
     roleColor: 'green',
     medias: {
       avatar: '/images/avatars/18.jpg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 59,
@@ -142,13 +142,13 @@ export const users = [
       { picture: '/images/avatars/27.jpg' },
       { picture: '/images/avatars/16.jpg' },
       { picture: '/images/avatars/29.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
     ],
   },
   {
@@ -159,7 +159,7 @@ export const users = [
     roleColor: 'primary',
     medias: {
       avatar: '/images/avatars/10.jpg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 42,
@@ -178,8 +178,8 @@ export const users = [
     role: 'Web Developer',
     roleColor: 'orange',
     medias: {
-      avatar: '/images/avatars/svg/vuero-25.svg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-25.svg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 17,
@@ -190,8 +190,8 @@ export const users = [
       { picture: '/images/avatars/26.jpg' },
       { picture: '/images/avatars/38.jpg' },
       { picture: '/images/avatars/21.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
-      { picture: '/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+      { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
     ],
   },
   {
@@ -201,8 +201,8 @@ export const users = [
     role: 'Software Engineer',
     roleColor: 'orange',
     medias: {
-      avatar: '/images/avatars/svg/vuero-7.svg',
-      flag: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-7.svg',
+      flag: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
       projects: 31,
@@ -211,7 +211,7 @@ export const users = [
     },
     teams: [
       { picture: '/images/avatars/9.jpg' },
-      { picture: '/images/avatars/svg/vuero-1.svg' },
+      { picture: '/panel/images/avatars/svg/vuero-1.svg' },
     ],
   },
 ]

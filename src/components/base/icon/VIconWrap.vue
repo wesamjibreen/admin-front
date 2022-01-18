@@ -1,5 +1,5 @@
 <script setup>
-    import {computed, defineProps, withDefaults} from 'vue'
+    import {computed, withDefaults} from 'vue'
     import {useViaPlaceholderError} from '../../../composable/useViaPlaceholderError'
 
     // export type VIconWrapDark = '1' | '2' | '3' | '4' | '5' | '6'

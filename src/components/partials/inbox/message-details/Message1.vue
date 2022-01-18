@@ -31,7 +31,7 @@ const dropdown2 = useDropdown(dropdownElement2)
     <div class="header-area">
       <img
         class="sender-pic"
-        src="/images/avatars/svg/vuero-25.svg"
+        src="/panel/images/avatars/svg/vuero-25.svg"
         alt=""
         @error.once="(event) => useViaPlaceholderError(event, '150x150')"
       />
@@ -199,7 +199,7 @@ const dropdown2 = useDropdown(dropdownElement2)
         <div class="reply-bubble">
           <div class="reply-as">
             <img
-              src="/images/avatars/svg/vuero-1.svg"
+              src="/panel/images/avatars/svg/vuero-1.svg"
               alt=""
               @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />

@@ -7,8 +7,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
     <div class="profile-header has-text-centered">
       <VAvatar
         size="xl"
-        picture="/images/avatars/svg/vuero-1.svg"
-        badge="/images/icons/flags/united-states-of-america.svg"
+        picture="/panel/images/avatars/svg/vuero-1.svg"
+        badge="/panel/images/icons/flags/united-states-of-america.svg"
       />
 
       <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
@@ -159,7 +159,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="languages-wrapper">
                   <div class="languages-item">
                     <VIconWrap
-                      picture="/images/icons/flags/united-states-of-america.svg"
+                      picture="/panel/images/icons/flags/united-states-of-america.svg"
                     >
                       <template #after>
                         <VPeity
@@ -264,7 +264,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                       <VAvatar size="small" initials="BT" color="warning" />
                       <VAvatar size="small" picture="/images/avatars/18.jpg" />
                       <VAvatar size="small" initials="JD" color="info" />
-                      <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+                      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
                       <VAvatar size="small" initials="38" />
                     </div>
                   </div>
@@ -298,7 +298,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                       <VAvatar size="small" picture="/images/avatars/38.jpg" />
                       <VAvatar size="small" picture="/images/avatars/11.jpg" />
                       <VAvatar size="small" initials="SC" color="h-purple" />
-                      <VAvatar size="small" picture="/images/avatars/svg/vuero-13.svg" />
+                      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-13.svg" />
                       <VAvatar size="small" initials="19" />
                     </div>
                   </div>
@@ -314,8 +314,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <div class="people">
                       <VAvatar size="small" picture="/images/avatars/21.jpg" />
                       <VAvatar size="small" initials="SC" color="h-purple" />
-                      <VAvatar size="small" picture="/images/avatars/svg/vuero-5.jpg" />
-                      <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+                      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-5.jpg" />
+                      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
                       <VAvatar size="small" initials="31" />
                     </div>
                   </div>
@@ -342,8 +342,8 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
-                      picture="/images/avatars/svg/vuero-5.jpg"
-                      badge="/images/icons/flags/united-states-of-america.svg"
+                      picture="/panel/images/avatars/svg/vuero-5.jpg"
+                      badge="/panel/images/icons/flags/united-states-of-america.svg"
                     />
                     <h3 class="dark-inverted">Project Manager</h3>
                     <p>
@@ -362,7 +362,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                     <VAvatar
                       size="large"
                       picture="/images/avatars/18.jpg"
-                      badge="/images/icons/flags/united-states-of-america.svg"
+                      badge="/panel/images/icons/flags/united-states-of-america.svg"
                     />
 
                     <h3 class="dark-inverted">UI/UX Designer</h3>
@@ -499,7 +499,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                   <!--People-->
                   <a href="#" class="people-item">
                     <VAvatar
-                      picture="/images/avatars/svg/vuero-25.svg"
+                      picture="/panel/images/avatars/svg/vuero-25.svg"
                       badge="/images/icons/stacks/js.svg"
                     />
 

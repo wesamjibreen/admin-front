@@ -10,7 +10,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -22,13 +22,13 @@ export const projects = [
       },
       {
         id: 2,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -74,7 +74,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -127,7 +127,7 @@ export const projects = [
       },
       {
         id: 5,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -161,7 +161,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -173,7 +173,7 @@ export const projects = [
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -214,7 +214,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -226,7 +226,7 @@ export const projects = [
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -261,7 +261,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -273,7 +273,7 @@ export const projects = [
       },
       {
         id: 8,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         initials: 'ML',
         color: 'warning',
       },
@@ -302,19 +302,19 @@ export const projects = [
     team: [
       {
         id: 25,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 13,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         initials: 'TS',
         color: 'info',
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -331,7 +331,7 @@ export const projects = [
     team: [
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         initials: 'AC',
         color: 'info',
       },

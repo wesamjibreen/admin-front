@@ -15,13 +15,13 @@ const tab = ref(props.activeTab)
 const filterTasks = ref(0)
 
 const participants = [
-  { picture: '/images/avatars/svg/vuero-7.svg' },
+  { picture: '/panel/images/avatars/svg/vuero-7.svg' },
   { picture: '/images/avatars/9.jpg' },
-  { picture: '/images/avatars/svg/vuero-12.svg' },
-  { picture: '/images/avatars/svg/vuero-1.svg' },
-  { picture: '/images/avatars/svg/vuero-25.svg' },
-  { picture: '/images/avatars/svg/vuero-25.svg' },
-  { picture: '/images/avatars/svg/vuero-25.svg' },
+  { picture: '/panel/images/avatars/svg/vuero-12.svg' },
+  { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+  { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+  { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+  { picture: '/panel/images/avatars/svg/vuero-25.svg' },
 ]
 </script>
 
@@ -285,7 +285,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Alice C." subtitle="Software Engineer">
                   <template #icon>
-                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-7.svg" />
+                    <VAvatar size="medium" picture="/panel/images/avatars/svg/vuero-7.svg" />
                   </template>
 
                   <template #action>
@@ -321,7 +321,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Joshua S." subtitle="Backend Developer">
                   <template #icon>
-                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-12.svg" />
+                    <VAvatar size="medium" picture="/panel/images/avatars/svg/vuero-12.svg" />
                   </template>
 
                   <template #action>
@@ -341,7 +341,7 @@ const participants = [
                   <template #icon>
                     <VAvatar
                       size="medium"
-                      picture="/images/avatars/svg/vuero-1.svg"
+                      picture="/panel/images/avatars/svg/vuero-1.svg"
                     />
                   </template>
 
@@ -360,7 +360,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Melany W." subtitle="Web Developer">
                   <template #icon>
-                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-25.svg" />
+                    <VAvatar size="medium" picture="/panel/images/avatars/svg/vuero-25.svg" />
                   </template>
 
                   <template #action>
@@ -378,7 +378,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Tara S." subtitle="UI/UX Designer">
                   <template #icon>
-                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-13.svg" />
+                    <VAvatar size="medium" picture="/panel/images/avatars/svg/vuero-13.svg" />
                   </template>
 
                   <template #action>
@@ -414,7 +414,7 @@ const participants = [
               <div class="column is-6">
                 <VBlock center title="Mary L." subtitle="Project Manager">
                   <template #icon>
-                    <VAvatar size="medium" picture="/images/avatars/svg/vuero-5.jpg" />
+                    <VAvatar size="medium" picture="/panel/images/avatars/svg/vuero-5.jpg" />
                   </template>
 
                   <template #action>
@@ -463,9 +463,9 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/images/avatars/svg/vuero-7.svg' },
-                          { picture: '/images/avatars/svg/vuero-1.svg' },
-                          { picture: '/images/avatars/svg/vuero-5.jpg' },
+                          { picture: '/panel/images/avatars/svg/vuero-7.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-1.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -492,7 +492,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: '/images/avatars/svg/vuero-12.svg' }]"
+                        :avatars="[{ picture: '/panel/images/avatars/svg/vuero-12.svg' }]"
                       />
                       <div class="attachments">
                         <i aria-hidden="true" class="lnil lnil-paperclip"></i>
@@ -518,7 +518,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: '/images/avatars/svg/vuero-12.svg' }]"
+                        :avatars="[{ picture: '/panel/images/avatars/svg/vuero-12.svg' }]"
                       />
                       <div class="attachments">
                         <i aria-hidden="true" class="lnil lnil-paperclip"></i>
@@ -545,8 +545,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/images/avatars/svg/vuero-5.jpg' },
-                          { picture: '/images/avatars/svg/vuero-7.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-5.jpg' },
+                          { picture: '/panel/images/avatars/svg/vuero-7.svg' },
                         ]"
                       />
                       <div class="attachments">
@@ -573,7 +573,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: '/images/avatars/svg/vuero-25.svg' }]"
+                        :avatars="[{ picture: '/panel/images/avatars/svg/vuero-25.svg' }]"
                       />
                       <div class="attachments">
                         <i aria-hidden="true" class="lnil lnil-paperclip"></i>
@@ -600,8 +600,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/images/avatars/svg/vuero-25.svg' },
-                          { picture: '/images/avatars/svg/vuero-12.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-12.svg' },
                         ]"
                       />
                       <div class="attachments">
@@ -629,8 +629,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/images/avatars/svg/vuero-25.svg' },
-                          { picture: '/images/avatars/svg/vuero-12.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-12.svg' },
                         ]"
                       />
                       <div class="attachments">
@@ -658,8 +658,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: '/images/avatars/svg/vuero-25.svg' },
-                          { picture: '/images/avatars/svg/vuero-12.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-25.svg' },
+                          { picture: '/panel/images/avatars/svg/vuero-12.svg' },
                         ]"
                       />
                       <div class="attachments">

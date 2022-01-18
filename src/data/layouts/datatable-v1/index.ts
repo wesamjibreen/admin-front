@@ -48,7 +48,7 @@ export const datatableV1 = {
     data: [
       [
         0,
-        '/images/avatars/svg/vuero-1.svg',
+        '/panel/images/avatars/svg/vuero-1.svg',
         'Erik Kovalsky',
         'Product Manager',
         'busy',
@@ -56,7 +56,7 @@ export const datatableV1 = {
       ],
       [
         1,
-        '/images/avatars/svg/vuero-7.svg',
+        '/panel/images/avatars/svg/vuero-7.svg',
         'Alice Carasca',
         'Software Engineer',
         'offline',
@@ -64,7 +64,7 @@ export const datatableV1 = {
       ],
       [
         2,
-        '/images/avatars/svg/vuero-13.svg',
+        '/panel/images/avatars/svg/vuero-13.svg',
         'Tara Svenson',
         'UI/UX Designer',
         'offline',
@@ -72,7 +72,7 @@ export const datatableV1 = {
       ],
       [
         3,
-        '/images/avatars/svg/vuero-5.jpg',
+        '/panel/images/avatars/svg/vuero-5.jpg',
         'Mary Lebowski',
         'Project Manager',
         'available',

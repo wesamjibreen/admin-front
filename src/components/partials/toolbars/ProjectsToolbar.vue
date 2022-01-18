@@ -8,11 +8,11 @@
     </div>
 
     <div class="avatar-stack">
-      <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
       <VAvatar size="small" picture="/images/avatars/9.jpg" />
-      <VAvatar size="small" picture="/images/avatars/svg/vuero-12.svg" />
-      <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
-      <VAvatar size="small" picture="/images/avatars/svg/vuero-25.svg" />
+      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-12.svg" />
+      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-1.svg" />
+      <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-25.svg" />
       <VAvatar size="small" picture="/images/avatars/22.jpg" />
     </div>
 

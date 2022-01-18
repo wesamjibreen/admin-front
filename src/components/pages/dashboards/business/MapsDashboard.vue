@@ -338,8 +338,7 @@ watch(isDark, () => {
   <div class="dashboard-map-wrapper">
     <div
       class="dashboard-map-wrapper-inner"
-      :class="[props.reversed && 'is-reversed']"
-    >
+      :class="[props.reversed && 'is-reversed']">
       <div ref="mapElement" class="map-section">
         <div ref="geocoderElement" class="geocoder"></div>
         <div ref="popupElement" style="display: none; visibility: hidden">

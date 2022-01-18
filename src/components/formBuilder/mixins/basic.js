@@ -48,12 +48,11 @@ export default {
     },
     data() {
         return {
-            resource: DEFAULT_FORM,
+            // resource: DEFAULT_FORM,
             editKey: "id",
             redirect: true,
             redirectTo: null,
             titleKey: "name",
-            tempForm: {}
         };
     },
     methods: {
@@ -287,6 +286,15 @@ export default {
     },
 
     computed: {
+        getResource() {
+            /**
+             * overwritten computed property returns form's resource
+             * this property may overwritten with new value in other builder mixins
+             *
+             * @author WeSSaM
+             */
+            return this.resource;
+        },
         formModule$() {
             /**
              * overwritten computed property returns formModule
@@ -317,9 +325,8 @@ export default {
              * @author WeSSaM
              */
             return function () {
-                return this.isEdit && !this.hasDialog
-                    ? this.route$(`${this.resource}.update`, this.__getId)
-                    : this.route$(`${this.resource}.store`);
+                return this.isEdit ? this.$endPoint(`${this.getResource}.update`, this.__getId)
+                    : this.$endPoint(`${this.getResource}.store`);
             }.bind(this);
         },
 
@@ -336,7 +343,7 @@ export default {
              * computed property returns find end point
              * @author WeSSaM
              */
-            return this.route$(`${this.resource}.find`, this.__getId);
+            return this.$endPoint(`${this.getResource}.find`, this.__getId);
         },
 
         title$() {
@@ -344,9 +351,8 @@ export default {
              * computed property returns translated page title based on resource
              * @author WeSSaM
              */
-            return this.isEdit
-                ? this.__trans(`${this.resource}.edit`) + this.objectTitle
-                : this.__trans(`${this.resource}.create`);
+            if (this.isEdit) return this.trans(`${this.getResource}.edit`) + this.objectTitle;
+            return this.trans(`${this.getResource}.create`);
         },
 
         objectTitle() {
@@ -359,7 +365,7 @@ export default {
              * computed property returns default route for redirection after submitting form
              * @author WeSSaM
              */
-            return {name: `${this.resource.replace("_", "-")}.all`};
+            return {name: `${this.getResource.replace("_", "-")}.all`};
         },
 
         dialogFormModule() {
@@ -369,11 +375,11 @@ export default {
             return _.find(this.inputs, {dialog: true});
         },
         optionsKey() {
-            return `${this.resource}Options`;
+            return `${this.getResource}Options`;
         },
         endPoint() {
             return {
-                route: `${this.resource}.index`,
+                route: `${this.getResource}.index`,
                 params: {
                     no_pagination: true
                 }
@@ -398,7 +404,7 @@ export default {
              * @author WeSSaM
              */
             form: function (state) {
-                return _.get(state, this.formModule, {});
+                return _.get(state, this.formModule$, {});
             },
             /**
              * computed property returns object form from vuex form module

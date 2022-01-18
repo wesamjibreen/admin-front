@@ -4,7 +4,7 @@ export const members = {
     {
       id: 33,
       avatar: '/images/avatars/33.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
       username: 'Harvey M.',
       fullName: 'Harvey Miller',
       initials: 'HM',
@@ -15,8 +15,8 @@ export const members = {
     },
     {
       id: 12,
-      avatar: '/images/avatars/svg/vuero-12.svg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
       username: 'Joshua S.',
       fullName: 'Joshua Stevens',
       initials: 'JS',
@@ -27,8 +27,8 @@ export const members = {
     },
     {
       id: 5,
-      avatar: '/images/avatars/svg/vuero-5.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-5.jpg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
       username: 'Mary L.',
       fullName: 'Mary Lebowski',
       initials: 'ML',
@@ -39,8 +39,8 @@ export const members = {
     },
     {
       id: 7,
-      avatar: '/images/avatars/svg/vuero-7.svg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-7.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
       username: 'Alice C.',
       fullName: 'Alice Carasca',
       initials: 'AC',
@@ -64,7 +64,7 @@ export const featuredLeft = {
       duration: '01:43',
       author: {
         name: 'Erik K.',
-        avatar: '/images/avatars/svg/vuero-1.svg',
+        avatar: '/panel/images/avatars/svg/vuero-1.svg',
       },
       comments: 2,
     },
@@ -77,7 +77,7 @@ export const featuredLeft = {
       duration: '05:17',
       author: {
         name: 'Alice C.',
-        avatar: '/images/avatars/svg/vuero-7.svg',
+        avatar: '/panel/images/avatars/svg/vuero-7.svg',
       },
       comments: 3,
     },
@@ -90,7 +90,7 @@ export const featuredLeft = {
       duration: '03:12',
       author: {
         name: 'Tara S.',
-        avatar: '/images/avatars/svg/vuero-13.svg',
+        avatar: '/panel/images/avatars/svg/vuero-13.svg',
       },
       comments: 0,
     },
@@ -109,7 +109,7 @@ export const featuredRight = {
       duration: '04:24',
       author: {
         name: 'Joshua S.',
-        avatar: '/images/avatars/svg/vuero-12.svg',
+        avatar: '/panel/images/avatars/svg/vuero-12.svg',
       },
       comments: 5,
     },
@@ -135,7 +135,7 @@ export const featuredRight = {
       duration: '07:11',
       author: {
         name: 'Mary L.',
-        avatar: '/images/avatars/svg/vuero-5.jpg',
+        avatar: '/panel/images/avatars/svg/vuero-5.jpg',
       },
       comments: 3,
     },
@@ -165,7 +165,7 @@ export const feed = [
     duration: '04:24',
     author: {
       name: 'Joshua S.',
-      avatar: '/images/avatars/svg/vuero-12.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
     },
     comments: 5,
   },
@@ -178,7 +178,7 @@ export const feed = [
     duration: '12:18',
     author: {
       name: 'Mary L.',
-      avatar: '/images/avatars/svg/vuero-5.jpg',
+      avatar: '/panel/images/avatars/svg/vuero-5.jpg',
     },
     comments: 4,
   },
@@ -269,7 +269,7 @@ export const feed = [
     duration: '07:16',
     author: {
       name: 'Joshua S.',
-      avatar: '/images/avatars/svg/vuero-12.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
     },
     comments: 5,
   },
@@ -282,7 +282,7 @@ export const feed = [
     duration: '11:17',
     author: {
       name: 'Melany W.',
-      avatar: '/images/avatars/svg/vuero-25.svg',
+      avatar: '/panel/images/avatars/svg/vuero-25.svg',
     },
     comments: 12,
   },

@@ -1,28 +1,50 @@
 <template>
-    <form class="form-layout" @submit.prevent>
-        <div class="form-outer">
-            <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
-                <div class="form-header-inner">
-                    <div class="left">
-                        <h3>Request a Demo</h3>
-                    </div>
-                    <div class="right">
-                        <div class="buttons">
-                            <VButton icon="lnir lnir-arrow-left rem-100" @click="onCancel" light dark-outlined>
-                                Cancel
-                            </VButton>
-                            <VButton color="primary" raised>
-                                Submit
-                            </VButton>
+    <!--<form class="form-layout" @submit.prevent>-->
+    <v-form v-slot="{ handleSubmit ,values}" as="div">
+        <form class="form-layout" @submit="handleSubmit($event, onSubmit)">
+
+            <!--<v-form class="form-layout" :validation-schema="schema" @submit="onSubmit" v-slot="{values}">-->
+            <div class="form-outer">
+                <div :class="[isStuck && 'is-stuck']" class="form-header stuck-header">
+                    <div class="form-header-inner">
+                        <div class="left">
+                            <h3>
+                                <!--Request a Demo-->
+                                {{ formTitle }}
+                            </h3>
+                        </div>
+                        <div class="right">
+                            <div class="buttons">
+                                <VButton icon="lnir lnir-arrow-left rem-100" @click.prevent="onCancel" light
+                                         dark-outlined>
+                                    <!--Cancel-->
+                                    {{ trans('cancel') }}
+                                </VButton>
+                                <VButton color="primary" type="submit" raised :loading="loading">
+                                    <!--@click.prevent="submit"-->
+                                    <!--Submit-->
+                                    {{ trans('save') }}
+                                </VButton>
+
+                                <!--<button>Submit</button>-->
+
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="form-body">
+                    <!--<v-field name="name" type="input" value=""></v-field>-->
+                    <!--<error-message name="name"></error-message>-->
+
+
+                    <VLoader size="small" :active="find_loading">
+                        <Fieldset v-for="fieldset in fieldSets$" v-bind="fieldset" :formModule="formModule$"/>
+                    </VLoader>
+                </div>
             </div>
-            <div class="form-body">
-                <Fieldset v-for="fieldset in fieldsets$" v-bind="fieldset" :formModule="formModule$"/>
-            </div>
-        </div>
-    </form>
+
+        </form>
+    </v-form>
 </template>
 
 
@@ -30,246 +52,98 @@
     import {useWindowScroll} from '@vueuse/core'
     import Fieldset from "./Fieldset";
     import formBuilder from "./mixins/formBuilder";
-    import {mapState} from "vuex";
-    import formModule, {
-        BUSY_FIELDS,
-        SET_INPUT,
-        SUBMIT_FORM,
-    } from  "../../store/modules/form.module";
+    import * as VeeValidate from "vee-validate";
+    // import {defineRule} from "vee-validate";
+    // import * as yup from 'yup';
+
+
+    // import * as rules from '../../utils/rules';
+    // Object.keys(rules).forEach(rule => {
+    //     console.log('rule',rule);
+    //     defineRule(rule, rules[rule]);
+    // });
+    // import {mapState} from "vuex";
+    // import formModule, {BUSY_FIELDS, SUBMIT_FORM,} from "../../store/modules/form.module";
     const {y} = useWindowScroll();
+    // defineRule('required', value => {
+    //     console.log('defineRule', value);
+    //
+    //     if (value) {
+    //         return true;
+    //     }
+    //
+    //     return 'This field is required';
+    //     // if (!value || !value.length) {
+    //     //     return 'This field is required';
+    //     // }
+    //     // return true;
+    // });
+    // defineRule('email', value => {
+    //     // Field is empty, should pass
+    //     if (!value || !value.length) {
+    //         return true;
+    //     }
+    //     // Check if email
+    //     if (!/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/.test(value)) {
+    //         return 'This field must be a valid email';
+    //     }
+    //     return true;
+    // });
     export default {
         name: "FormLayout",
-        components: {Fieldset},
+        provide()  {
+            return {formModule: this.formModule}
+        },
+        // provide : [']
+        // components: {Fieldset},
         mixins: [formBuilder],
-        props: {
-            data: {
-                required: true,
-                default: []
-            },
-            resource: {
-                required: false,
-                default: "default",
-            },
-            inputs: {
-                required: true,
-            },
-            crud: {
-                required: false,
-                default: false,
-            },
-            hasSubmit: {
-                required: false,
-                default: true,
-            },
-            endPoint: Function,
+        // setup() {
+        //     const { handleSubmit } = useForm();
+        //     function onInvalidSubmit({ values, errors, results }) {
+        //         console.log(values); // current form values
+        //         console.log(errors); // a map of field names and their first error message
+        //         console.log(results); // a detailed map of field names and their validation results
+        //     }
+        //     const onSubmit = handleSubmit(values => {
+        //         alert(JSON.stringify(values, null, 2));
+        //     }, onInvalidSubmit);
+        //     return {
+        //         onSubmit,
+        //     };
+        // },
+        components: {
+            // Components were renamed to avoid conflicts of HTML form element without a vue compiler
+            Fieldset,
+            VForm: VeeValidate.Form,
+            VField: VeeValidate.Field,
+            ErrorMessage: VeeValidate.ErrorMessage,
         },
-        created() {
-            this.onFormCreated();
-            this.registerFormModule();
-            Bus.off(`${this.moduleResourceKey}-form-submitted`);
-            Bus.on(
-                `${this.moduleResourceKey}-form-submitted`,
-                function (formModule) {
-                    this.submit();
-                }.bind(this)
-            );
-        },
-        mounted() {
-            this.onFormMounted();
-            this.initOnFindLoading();
-            this.initOnFormHasChangesEvent();
+        data() {
+            return {}
         },
         methods: {
+//             onError() {
+// alert('onError')
+//             },
+            onSubmit(values, actions) {
+                console.log('onSubmit', values, actions);
+                this.submit()
+                // alert('submitted');
+                // console.log(JSON.stringify(values, null, 2));
+                // actions.setFieldError('name', 'this field is already been taken !! ');
+            },
             onCancel() {
                 this.$emit('cancel');
-            },
-            closeMultiLangDailog() {
-                this.multiLangDialog = false;
-            },
-            multiLangDialogOk() {
-                this.closeMultiLangDailog();
-                this.submit(false);
-            },
-            initOnFormHasChangesEvent() {
-                Bus.on(
-                    "form-set-value",
-                    function (formModule) {
-                        if (formModule === this.moduleResourceKey) {
-                            const hasUnsavedChanges =
-                                this.$store.state[`${formModule}`]["unsavedChanges"];
-                            if (!hasUnsavedChanges) {
-                                this.$store.commit(`${formModule}/${SET_INPUT}`, {
-                                    model: "unsavedChanges",
-                                    value: true,
-                                });
-                            }
-                        }
-                    }.bind(this)
-                );
-            },
-            initOnFindLoading() {
-                Bus.off("form-fetch-loading");
-                Bus.on(
-                    "form-fetch-loading",
-                    function (loading) {
-                        this.find_loading = loading;
-                    }.bind(this)
-                );
-            },
-            registerFormModule() {
-                // if (this.$store.hasModule(this.moduleResourceKey)) {
-                //     this.$store.unregisterModule(this.moduleResourceKey);
-                // }
 
-                this.$store.registerModule(this.moduleResourceKey, formModule);
-            },
-            validateForm() {
-                return this.$refs.observer.validate();
-            },
-            attachErrors(response) {
-                let errors = _.get(response, "data.data", {});
-                let errorCode = _.get(response, "data.error_code");
-                if (errorCode === 103) this.$refs.observer.setErrors(errors);
-            },
-            submit(checkMultiLang = true) {
-                if (this.isFormBusy) {
-                    return;
-                }
-
-                return new Promise((resolve, reject) => {
-                    this.validateForm().then(
-                        function (valid) {
-                            if (valid && checkMultiLang && this.hasEmptyMultiLangFields) {
-                                this.multiLangDialog = true;
-                                return;
-                            }
-
-                            if (valid) {
-                                Bus.emit("before-form-submit", this.moduleResourceKey);
-                                Bus.emit(
-                                    `before-form-submit-${this.moduleResourceKey}`,
-                                    this.moduleResourceKey
-                                );
-
-                                this.loading = true;
-                                this.$store
-                                    .dispatch(`${this.moduleResourceKey}/${SUBMIT_FORM}`, {
-                                        _this: this,
-                                        endPoint: this.endPoint$,
-                                    })
-                                    .then(
-                                        function (data) {
-                                            Bus.emit(
-                                                "on-form-success",
-                                                this.moduleResourceKey,
-                                                data,
-                                                this.crud
-                                            );
-                                            Bus.emit(
-                                                `on-form-success-${this.moduleResourceKey}`,
-                                                this.moduleResourceKey,
-                                                data,
-                                                this.crud
-                                            );
-                                            this.__showToast("success", data.message);
-                                            resolve(data);
-                                        }.bind(this)
-                                    )
-                                    .catch(
-                                        function (xhr) {
-                                            Bus.emit(
-                                                "on-form-error",
-                                                this.moduleResourceKey,
-                                                xhr
-                                            );
-                                            Bus.emit(`on-form-error-${this.moduleResourceKey}`, xhr);
-
-                                            let message = _.get(
-                                                xhr,
-                                                "data.message",
-                                                this.__trans("error_while_processing")
-                                            );
-                                            this.attachErrors(xhr);
-                                            this.__showToast("error", message);
-                                            this.loading = false;
-                                            reject(xhr);
-                                        }.bind(this)
-                                    )
-                                    .finally(() => (this.loading = false));
-                            } else this.__showToast("error", this.__trans("validation_error"));
-                        }.bind(this)
-                    );
-                });
-            },
-            onFormCreated() {
-            },
-            onFormMounted() {
-            },
-            getFormResourceKey(resource) {
-                return `${resource}Form`;
-            },
+                if (!this.isCrud)
+                    this.$router.go(-1);
+            }
         },
         computed: {
-            formModule() {
-                /**
-                 * computed property returns registered form module key
-                 *
-                 * @author WeSSaM
-                 */
-                return `${this.resource}Form`;
-            },
             isStuck() {
                 return y.value > 30;
             },
-            fieldsets$() {
-                return this.data;
-            },
-            hasEmptyMultiLangFields() {
-                const multiLangFields = this.inputs$.filter((input) => input.multiLang);
-                if (multiLangFields.length === 0) return false;
-
-                let _hasEmptyMultiLangFields = false;
-                const formData = this.$store.state[this.moduleResourceKey];
-                // check for empty multi lang fields
-                multiLangFields.forEach(
-                    function (input) {
-                        if (!_hasEmptyMultiLangFields) {
-                            this.languagesLocales.forEach(
-                                function (locale) {
-                                    const model = `${input.model}_${locale}`;
-                                    if (!formData[model]) _hasEmptyMultiLangFields = true;
-                                }.bind(this)
-                            );
-                        }
-                    }.bind(this)
-                );
-                return _hasEmptyMultiLangFields;
-            },
-
-            isFormBusy() {
-                const busyFields =
-                    this.$store.state[`${this.moduleResourceKey}`][`${BUSY_FIELDS}`] || [];
-                return busyFields.length > 0;
-            },
-            moduleResourceKey() {
-                return this.getFormResourceKey(this.resource);
-            },
-            inputs$() {
-                return this.inputs;
-            },
-            endPoint$() {
-                return this.endPoint && this.endPoint instanceof Function
-                    ? this.endPoint(this)
-                    : {};
-            },
-            ...mapState({
-                /**
-                 * Check if page has full screen dialog
-                 * @returns {boolean}
-                 */
-                hasDialog: (state) => state.dialog.displayed,
-            }),
-        },
+        }
 
     }
 </script>
@@ -282,5 +156,25 @@
     .form-layout {
         max-width: initial !important;
         margin: 0 auto;
+    }
+
+    input.input.is-invalid {
+        border: solid 1px #ff2f20;
+    }
+
+    .field-container.is-invalid input {
+        border: solid 1px #ff2f20;
+    }
+
+    .field-container.is-invalid textarea {
+        border: solid 1px #ff2f20;
+    }
+
+    .multiselect.input.is-invalid {
+        border: solid 1px #ff2f20;
+    }
+
+    .field > label {
+        font-size: 1.0rem !important;
     }
 </style>

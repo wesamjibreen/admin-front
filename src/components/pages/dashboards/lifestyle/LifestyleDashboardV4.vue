@@ -61,7 +61,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
                 <div class="featured-authors-item">
                   <VBlock title="Alice C." subtitle="Software Engineer" center>
                     <template #icon>
-                      <VAvatar picture="/images/avatars/svg/vuero-7.svg" squared />
+                      <VAvatar picture="/panel/images/avatars/svg/vuero-7.svg" squared />
                     </template>
                     <template #action>
                       <span class="dark-inverted">112K</span>
@@ -201,7 +201,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <VBlock title="Alice C." subtitle="Software Engineer">
                     <template #icon>
-                      <VAvatar picture="/images/avatars/svg/vuero-7.svg" squared />
+                      <VAvatar picture="/panel/images/avatars/svg/vuero-7.svg" squared />
                     </template>
                   </VBlock>
                 </div>
@@ -223,7 +223,7 @@ import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
 
                   <VBlock title="Mary L." subtitle="Project Manager">
                     <template #icon>
-                      <VAvatar picture="/images/avatars/svg/vuero-5.jpg" squared />
+                      <VAvatar picture="/panel/images/avatars/svg/vuero-5.jpg" squared />
                     </template>
                   </VBlock>
                 </div>

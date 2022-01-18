@@ -12,7 +12,7 @@ export const classes = [
     },
     author: {
       id: 8,
-      picture: '/images/avatars/svg/vuero-1.svg',
+      picture: '/panel/images/avatars/svg/vuero-1.svg',
       username: 'Erik K.',
       initials: 'EK',
       color: 'info',
@@ -31,7 +31,7 @@ export const classes = [
     },
     author: {
       id: 12,
-      picture: '/images/avatars/svg/vuero-12.svg',
+      picture: '/panel/images/avatars/svg/vuero-12.svg',
       username: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -50,7 +50,7 @@ export const classes = [
     },
     author: {
       id: 12,
-      picture: '/images/avatars/svg/vuero-5.jpg',
+      picture: '/panel/images/avatars/svg/vuero-5.jpg',
       username: 'Mary L.',
       initials: 'ML',
       color: 'info',

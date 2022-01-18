@@ -1,11 +1,26 @@
 import {BUSY_FIELDS, SET_BUSY_FIELDS, SET_INPUT} from "../../../store/modules/form.module";
 import {mapState} from "vuex";
+import * as VeeValidate from 'vee-validate'
+import {useField} from 'vee-validate'
 
 export default {
+    setup(props) {
+        // const props = defineProps();
+        const {errorMessage, meta, value} = useField(props.model);
+        return {
+            errorMessage,
+            meta,
+            value
+        };
+    },
     props: {
         component: String,
-        value: {required: false},
-
+        value: {
+            required: false
+        },
+        modelValue: {
+            required: false
+        },
         model: {
             required: true
         },
@@ -31,21 +46,29 @@ export default {
         multiLang: Boolean,
         locale: String
     },
+    components: {
+        VForm: VeeValidate.Form,
+        VeeField: VeeValidate.Field,
+        ErrorMessage: VeeValidate.ErrorMessage,
+    },
     data() {
         return {
             // input: null
             repeaterFieldValue: this.defaultValue,
             // repeaterFieldValue: null
-            detectChanges: false
+            detectChanges: false,
+            generatedKey: Math.random()
         };
     },
     created() {
+        this.$bus.off(`on-form-fetch-${this.formModule}`);
+        this.$bus.on(`on-form-fetch-${this.formModule}`, this.onFetch);
+
         /**
          * calling overwritten onInputCreated method
          * @author WeSSaM
          */
         this.onInputCreated();
-        // this.setInputDefaultValue(this.inputValue);
 
         const interval = this.isEdit ? 2000 : 500;
         setTimeout(
@@ -54,6 +77,8 @@ export default {
             }.bind(this),
             interval
         );
+
+
     },
     mounted() {
         /**
@@ -63,8 +88,6 @@ export default {
         this.onInputMounted();
     },
     methods: {
-        getRepeaterData() {
-        },
         setInputDefaultValue(value = null) {
             this.input = value || this.defaultValue;
         },
@@ -76,50 +99,18 @@ export default {
          * @author WeSSaM
          */
         $commit(newVal) {
-            // if (this.detectChanges) {
-            //     this.$root.$emit("form-set-value", this.formModule);
-            // }
-            //
             let model = this.model;
             let locale = this.locale$;
             let value = this.passingInput(newVal);
-            // alert('$commit')
-            this.$store.commit(`${this.formModule}/${SET_INPUT}`, {
-                model,
-                locale,
-                value
-            });
 
-            // if (this.repeater) {
-            //     value = this.$store.state[`${this.formModule}`][this.repeater.model];
-            //     model = this.repeater.model;
-            //     let index = this.repeater.rowIndex;
-            //
-            //     if (!value) value = [];
-            //     let item = value.length > index ? value[index] : {};
-            //     item[this.model] = this.passingInput(newVal);
-            //     if (value.length > index) {
-            //         value[index] = item;
-            //     } else {
-            //         value.push(item);
-            //     }
-            //
-            //     // this.$root.$emit("repeater-field-set-value", this.repeater.model);
-            //
-            //     this.repeaterFieldValue = newVal;
-            //     this.$store.commit(`${this.formModule}/${SET_INPUT}`, {
-            //         model,
-            //         value
-            //     });
-            // }
-            // else {
-            //     this.$root.$emit("form-field-set-value", this.formModule, model, value);
-            //
-            //     this.$store.commit(`${this.formModule}/${SET_INPUT}`, {
-            //         model,
-            //         value
-            //     });
-            // }
+            if (this.fromModule)
+                this.$store.commit(`${this.formModule}/${SET_INPUT}`, {
+                    model,
+                    locale,
+                    value
+                });
+            else
+                this.$emit('update:modelValue', value);
         },
 
         /**
@@ -146,6 +137,10 @@ export default {
          */
         onInputMounted() {
             /* @Todo, you can override the method then customize it as you want */
+        },
+
+        onFetch() {
+
         }
     },
     computed: {
@@ -177,7 +172,10 @@ export default {
              *
              * @author WeSSaM
              */
-            return this.model;
+            if (this.fromModule)
+                return this.model;
+
+            return `${this.model}_${this.generatedKey}`;
         },
 
         type$() {
@@ -205,22 +203,24 @@ export default {
              *
              * @author WeSSaM
              */
-            return this.placeholder;
-            // switch (this.component) {
-            //     case "select":
-            //         return this.placeholder
-            //             ? this.__trans(this.placeholder)
-            //             : `${this.__trans("select")} ${this.__trans(this.label$)}`;
-            //     case "attachment":
-            //         return this.placeholder
-            //             ? this.__trans(this.placeholder)
-            //             : `${this.__trans("choose")} ${this.__trans(this.label$)}`;
-            //     default:
-            //         return this.placeholder
-            //             ? this.__trans(this.placeholder)
-            //             : `${this.__trans("enter")} ${this.__trans(this.label$)}`;
-            // }
+            switch (this.component) {
+                case "select":
+                    return this.placeholder ? this.trans(this.placeholder) : `${this.trans("select")} ${this.trans(this.label$)}`;
+                case "attachment":
+                    return this.placeholder ? this.trans(this.placeholder) : `${this.trans("choose")} ${this.trans(this.label$)}`;
+                default:
+                    return this.placeholder ? this.trans(this.placeholder) : `${this.trans("enter")} ${this.trans(this.label$)}`;
+            }
         },
+
+        // modelValue: {
+        //     get() {
+        //         return this.input
+        //     },
+        //     set() {
+        //
+        //     }
+        // },
 
         input: {
             /**
@@ -231,9 +231,9 @@ export default {
              * @author WeSSaM
              */
             get() {
-                // console.log("get:", this.model, this.inputValue);
                 if (this.locale$)
-                    return this.inputValue && this.inputValue[this.locale$] ? this.inputValue[this.locale$] : this.defaultValue;
+                    return _.get(this.inputValue, this.locale$, this.defaultValue);
+
                 return this.inputValue;
             },
             set(newVal) {
@@ -310,21 +310,22 @@ export default {
              *
              * @author WeSSaM
              */
-            if (this.repeater) {
-                const repeaterData = this.$store.state[`${this.formModule}`][
-                    this.repeater.model
-                    ];
-                const repeaterRow = repeaterData[this.repeater.rowIndex];
-                this.repeaterFieldValue = _.get(
-                    repeaterRow,
-                    this.model,
-                    this.defaultValue
-                );
-                // return _.get(repeaterRow, this.model, this.defaultValue);
-                return this.repeaterFieldValue;
-            } else {
+            if (this.fromModule)
                 return _.get(this.form, this.model$, this.defaultValue);
-            }
+            else
+                return this.modelValue;
+        },
+
+        fromModule() {
+            return !!this.formModule;
+        },
+
+        errorsBag() {
+            return _.get(this.form, `errors.${this.model$}`, [])
+        },
+
+        hasErrors() {
+            return this.errorsBag.length > 0;
         },
 
         ...mapState({
@@ -337,6 +338,19 @@ export default {
                 return _.get(state, this.formModule, {});
             }
         })
-    }
+    },
+    // watch: {
+    //     modelValue: {
+    //         deep: true,
+    //         immediate: true,
+    //         handler(newVal) {
+    //             if (!this.fromModule) {
+    //                 console.log('setModel modelValue', this.input, newVal);
+    //
+    //                 this.input = newVal;
+    //             }
+    //         }
+    //     }
+    // }
     // }
 };

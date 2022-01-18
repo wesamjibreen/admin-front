@@ -7,7 +7,7 @@ export const projects = [
     image: '/demo/photos/apps/1.jpg',
     owner: {
       id: 7,
-      avatar: '/images/avatars/svg/vuero-7.svg',
+      avatar: '/panel/images/avatars/svg/vuero-7.svg',
       name: 'Alice C.',
       initials: 'AC',
       color: 'info',
@@ -29,7 +29,7 @@ export const projects = [
       },
       {
         id: 12,
-        picture: '/images/avatars/svg/vuero-12.svg',
+        picture: '/panel/images/avatars/svg/vuero-12.svg',
         name: 'Joshua S.',
         initials: 'JS',
         color: 'success',
@@ -44,7 +44,7 @@ export const projects = [
     image: '/demo/photos/apps/2.png',
     owner: {
       id: 8,
-      avatar: '/images/avatars/svg/vuero-1.svg',
+      avatar: '/panel/images/avatars/svg/vuero-1.svg',
       name: 'Erik K.',
       initials: 'EK',
       color: 'info',
@@ -52,7 +52,7 @@ export const projects = [
     team: [
       {
         id: 13,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
@@ -74,7 +74,7 @@ export const projects = [
     image: '/demo/photos/apps/3.png',
     owner: {
       id: 25,
-      avatar: '/images/avatars/svg/vuero-25.svg',
+      avatar: '/panel/images/avatars/svg/vuero-25.svg',
       name: 'Melany W.',
       initials: 'MW',
       color: 'info',
@@ -105,7 +105,7 @@ export const projects = [
     team: [
       {
         id: 13,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
@@ -179,7 +179,7 @@ export const projects = [
       },
       {
         id: 8,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         name: 'Erik K.',
         initials: 'EK',
         color: 'h-purple',
@@ -194,7 +194,7 @@ export const projects = [
     image: '/demo/photos/apps/7.png',
     owner: {
       id: 25,
-      avatar: '/images/avatars/svg/vuero-25.svg',
+      avatar: '/panel/images/avatars/svg/vuero-25.svg',
       name: 'Melany W.',
       initials: 'MW',
       color: 'info',
@@ -217,7 +217,7 @@ export const projects = [
     image: '/demo/photos/apps/8.png',
     owner: {
       id: 5,
-      avatar: '/images/avatars/svg/vuero-5.jpg',
+      avatar: '/panel/images/avatars/svg/vuero-5.jpg',
       name: 'Mary L.',
       initials: 'ML',
       color: 'info',
@@ -314,7 +314,7 @@ export const projects = [
     image: '/demo/photos/apps/11.png',
     owner: {
       id: 13,
-      avatar: '/images/avatars/svg/vuero-13.svg',
+      avatar: '/panel/images/avatars/svg/vuero-13.svg',
       name: 'Tara S.',
       initials: 'TS',
       color: 'danger',
@@ -337,7 +337,7 @@ export const projects = [
     image: '/demo/photos/apps/12.jpg',
     owner: {
       id: 12,
-      avatar: '/images/avatars/svg/vuero-12.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
       name: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -360,7 +360,7 @@ export const projects = [
     image: '/demo/photos/apps/13.png',
     owner: {
       id: 12,
-      avatar: '/images/avatars/svg/vuero-12.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
       name: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -368,7 +368,7 @@ export const projects = [
     team: [
       {
         id: 8,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         name: 'Erik K.',
         initials: 'EK',
         color: 'h-purple',
@@ -428,7 +428,7 @@ export const projects = [
     team: [
       {
         id: 5,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         name: 'Mary L.',
         initials: 'ML',
         color: 'info',

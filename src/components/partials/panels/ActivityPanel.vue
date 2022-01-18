@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script setup >
 import { ref } from 'vue'
-import { activePanel } from '/@src/state/activePanelState'
-import { useViaPlaceholderError } from '/@src/composable/useViaPlaceholderError'
+import { activePanel } from '../../../state/activePanelState'
+import { useViaPlaceholderError } from '../../../composable/useViaPlaceholderError'
 
-type TabId = 'team' | 'projects' | 'schedule'
-const activeTab = ref<TabId>('team')
+// type TabId = 'team' | 'projects' | 'schedule'
+const activeTab = ref('team')
 </script>
 
 <template>
@@ -53,8 +53,8 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="/images/avatars/svg/vuero-12.svg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                picture="/panel/images/avatars/svg/vuero-12.svg"
+                badge="/panel/images/icons/flags/united-states-of-america.svg"
               />
 
               <div class="meta">
@@ -80,8 +80,8 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="/images/avatars/svg/vuero-25.svg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                picture="/panel/images/avatars/svg/vuero-25.svg"
+                badge="/panel/images/icons/flags/united-states-of-america.svg"
               />
 
               <div class="meta">
@@ -108,7 +108,7 @@ const activeTab = ref<TabId>('team')
             <div class="team-card">
               <VAvatar
                 picture="/images/avatars/18.jpg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                badge="/panel/images/icons/flags/united-states-of-america.svg"
               />
 
               <div class="meta">
@@ -134,8 +134,8 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="/images/avatars/svg/vuero-13.svg"
-                badge="/images/icons/flags/united-states-of-america.svg"
+                picture="/panel/images/avatars/svg/vuero-13.svg"
+                badge="/panel/images/icons/flags/united-states-of-america.svg"
               />
 
               <div class="meta">
@@ -199,11 +199,11 @@ const activeTab = ref<TabId>('team')
                   <span>5 / 24</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="/images/avatars/svg/vuero-5.jpg" />
-                    <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+                    <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-5.jpg" />
+                    <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
                     <VAvatar
                       size="small"
-                      picture="/images/avatars/svg/vuero-1.svg"
+                      picture="/panel/images/avatars/svg/vuero-1.svg"
                     />
                   </div>
                 </div>
@@ -245,7 +245,7 @@ const activeTab = ref<TabId>('team')
                   <span>28 / 31</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="/images/avatars/svg/vuero-13.svg" />
+                    <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-13.svg" />
                     <VAvatar size="small" picture="/images/avatars/18.jpg" />
                   </div>
                 </div>
@@ -287,8 +287,8 @@ const activeTab = ref<TabId>('team')
                   <span>25 / 39</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
-                    <VAvatar size="small" picture="/images/avatars/svg/vuero-25.svg" />
+                    <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
+                    <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-25.svg" />
                   </div>
                 </div>
               </div>
@@ -321,7 +321,7 @@ const activeTab = ref<TabId>('team')
                 <div class="timeline-icon">
                   <img
                     class="avatar"
-                    src="/images/avatars/svg/vuero-7.svg"
+                    src="/panel/images/avatars/svg/vuero-7.svg"
                     alt=""
                     @error.once="
                       (event) => useViaPlaceholderError(event, '150x150')

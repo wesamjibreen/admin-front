@@ -149,7 +149,7 @@ import { popovers } from '/@src/data/users/userPopovers'
               :offset="[0, 40]"
               placement="top-end"
             >
-              <VAvatar picture="/images/avatars/svg/vuero-7.svg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-7.svg" />
               <template #content>
                 <UserPopoverContent :user="popovers.user7" />
               </template>

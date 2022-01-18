@@ -33,7 +33,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -338,7 +338,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',

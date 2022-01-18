@@ -8,7 +8,7 @@ export const topicList = [
     users: [
       {
         id: 2,
-        picture: '/images/avatars/svg/vuero-12.svg',
+        picture: '/panel/images/avatars/svg/vuero-12.svg',
       },
       {
         id: 5,
@@ -53,7 +53,7 @@ export const topicList = [
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -66,7 +66,7 @@ export const topicList = [
     users: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
       },
       {
         id: 21,
@@ -87,11 +87,11 @@ export const topicList = [
       },
       {
         id: 6,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
       {
         id: 100,

@@ -1,108 +1,71 @@
-<script >
-    // export interface VAvatarProps {
-    //   picture?: string
-    //   pictureDark?: string
-    //   placeholder?: string
-    //   badge?: string
-    //   initials?: string
-    //   size?: VAvatarSize
-    //   color?: VAvatarColor
-    //   dotColor?: VAvatarDotColor
-    //   squared?: boolean
-    //   dot?: boolean
-    // }
-    import {defineProps} from "vue";
-
-    // export type VAvatarSize = 'small' | 'medium' | 'large' | 'big' | 'xl'
-    // export type VAvatarColor =
-    //   | 'primary'
-    //   | 'success'
-    //   | 'info'
-    //   | 'warning'
-    //   | 'danger'
-    //   | 'h-purple'
-    //   | 'h-orange'
-    //   | 'h-blue'
-    //   | 'h-green'
-    //   | 'h-red'
-    //   | 'h-yellow'
-    // export type VAvatarDotColor =
-    //   | 'primary'
-    //   | 'success'
-    //   | 'info'
-    //   | 'warning'
-    //   | 'danger'
+<script>
+    import {useViaPlaceholderError} from '../../../composable/useViaPlaceholderError';
     export default {
         setup() {
-            let props = defineProps();
-            if (!props)
-                props = {
-                    picture: undefined,
-                    pictureDark: undefined,
-                    placeholder: 'https://via.placeholder.com/50x50',
-                    initials: '?',
-                    badge: undefined,
-                    size: undefined,
-                    color: undefined,
-                    dotColor: undefined,
-                }
             return {
-                props,
-                ...props
+                useViaPlaceholderError
+            }
+        },
+        props: {
+            picture: {
+                default: undefined
+            },
+            pictureDark: {
+                default: undefined
+            },
+            placeholder : {
+                default:  'https://via.placeholder.com/50x50'
+            },
+            initials : {
+                default:  '?'
+            },
+            badge : {
+                default: undefined
+            },
+            size : {
+                default: undefined
+            },
+            color : {
+                default: undefined
+            },
+            squared : {
+                default: undefined
+            },
+            dotColor : {
+                default: undefined
             }
         }
     }
-
-    // const props = withDefaults(defineProps(), {
-    //     picture: undefined,
-    //     pictureDark: undefined,
-    //     placeholder: 'https://via.placeholder.com/50x50',
-    //     initials: '?',
-    //     badge: undefined,
-    //     size: undefined,
-    //     color: undefined,
-    //     dotColor: undefined,
-    // })
-    // alert(picture);
 </script>
 
 <template>
-    <div
-            class="v-avatar"
+    <div class="v-avatar"
             :class="[
-      size && `is-${props.size}`,
+      size && `is-${size}`,
       dot && 'has-dot',
-      dotColor && `dot-${props.dotColor}`,
+      dotColor && `dot-${dotColor}`,
       squared && dot && 'has-dot-squared',
-    ]"
-    >
+    ]">
         <slot name="avatar">
-            <img
-                    v-if="props.picture"
-                    class="avatar"
-                    :class="[
-          props.squared && 'is-squared',
-          props.pictureDark && 'light-image',
-        ]"
-                    :src="props.picture"
-                    alt=""
-                    @error.once="(event) => useViaPlaceholderError(event, '150x150')"
-            />
+            <img v-if="picture" class="avatar" :class="[ squared && 'is-squared', pictureDark && 'light-image' ]"
+                 :src="picture"
+                 alt=""
+                 @error.once="(event) => useViaPlaceholderError(event, '150x150')"/>
             <span
                     v-else
                     class="avatar is-fake"
                     :class="[
-          props.squared && 'is-squared',
-          props.color && `is-${props.color}`,
+          squared && 'is-squared',
+          color && `is-${color}`,
         ]"
             >
-        <span>{{ props.initials }}</span>
+        <span>{{ initials }}</span>
       </span>
             <img
-                    v-if="props.picture && props.pictureDark"
+                    v-if="picture && pictureDark"
                     class="avatar dark-image"
-                    :class="[props.squared && 'is-squared']"
-                    :src="props.pictureDark"
+                    :class="[squared && 'is-squared']"
+                    :src="pictureDark"
                     alt=""
                     @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />
@@ -110,9 +73,9 @@
 
         <slot name="badge">
             <img
-                    v-if="props.badge"
+                    v-if="badge"
                     class="badge"
-                    :src="props.badge"
+                    :src="badge"
                     alt=""
                     @error.once="(event) => useViaPlaceholderError(event, '150x150')"
             />

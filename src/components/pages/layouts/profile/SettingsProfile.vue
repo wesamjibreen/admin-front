@@ -3,8 +3,8 @@
     <div class="profile-header has-text-centered">
       <VAvatar
         size="xl"
-        picture="/images/avatars/svg/vuero-1.svg"
-        badge="/images/icons/flags/united-states-of-america.svg"
+        picture="/panel/images/avatars/svg/vuero-1.svg"
+        badge="/panel/images/icons/flags/united-states-of-america.svg"
       />
 
       <h3 class="title is-4 is-narrow">Erik Kovalsky</h3>

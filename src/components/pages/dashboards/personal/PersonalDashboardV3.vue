@@ -276,7 +276,7 @@ const userStack = userData.userStack as VAvatarProps[]
         <a href="#" class="dashboard-card is-interview">
           <VBlock title="Joshua S." subtitle="02:30 - 03:00" center>
             <template #icon>
-              <VAvatar picture="/images/avatars/svg/vuero-12.svg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-12.svg" />
             </template>
             <template #action>
               <i

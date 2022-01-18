@@ -5,22 +5,22 @@
         <div class="boxed-cta">
           <VAvatar
             class="v-avatar-1"
-            picture="/images/avatars/svg/vuero-1.svg"
+            picture="/panel/images/avatars/svg/vuero-1.svg"
             size="xl"
           />
           <VAvatar
             class="v-avatar-2"
-            picture="/images/avatars/svg/vuero-5.jpg"
+            picture="/panel/images/avatars/svg/vuero-5.jpg"
             size="large"
           />
           <VAvatar
             class="v-avatar-3"
-            picture="/images/avatars/svg/vuero-7.svg"
+            picture="/panel/images/avatars/svg/vuero-7.svg"
             size="large"
           />
           <VAvatar
             class="v-avatar-4"
-            picture="/images/avatars/svg/vuero-13.svg"
+            picture="/panel/images/avatars/svg/vuero-13.svg"
             size="xl"
           />
           <VAvatar
@@ -30,7 +30,7 @@
           />
           <VAvatar
             class="v-avatar-6"
-            picture="/images/avatars/svg/vuero-12.svg"
+            picture="/panel/images/avatars/svg/vuero-12.svg"
             size="xl"
           />
           <VAvatar
@@ -50,7 +50,7 @@
           />
           <VAvatar
             class="v-avatar-10"
-            picture="/images/avatars/svg/vuero-25.svg"
+            picture="/panel/images/avatars/svg/vuero-25.svg"
             size="medium"
           />
           <VAvatar

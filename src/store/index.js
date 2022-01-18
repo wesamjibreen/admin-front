@@ -1,12 +1,11 @@
 import {createStore} from "vuex";
-
-import modules from './modules';
+import {buildModules} from './modules';
 
 
 // export default store;
-export const initStore = function (options) {
+export default function (options, config) {
     return createStore({
         ...options,
-        modules
+        modules: buildModules(config)
     });
 };

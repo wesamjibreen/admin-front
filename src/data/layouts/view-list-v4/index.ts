@@ -8,7 +8,7 @@ export const recipes = [
     attachments: 3,
     author: {
       name: 'Alice C.',
-      avatar: '/images/avatars/svg/vuero-7.svg',
+      avatar: '/panel/images/avatars/svg/vuero-7.svg',
     },
     followers: [
       {
@@ -17,7 +17,7 @@ export const recipes = [
       },
       {
         id: 2,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
     ],
   },
@@ -35,7 +35,7 @@ export const recipes = [
     followers: [
       {
         id: 1,
-        picture: '/images/avatars/svg/vuero-12.svg',
+        picture: '/panel/images/avatars/svg/vuero-12.svg',
       },
       {
         id: 2,
@@ -185,7 +185,7 @@ export const recipes = [
     followers: [
       {
         id: 1,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
       {
         id: 2,
@@ -193,7 +193,7 @@ export const recipes = [
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
       },
       {
         id: 4,
@@ -230,12 +230,12 @@ export const recipes = [
     attachments: 2,
     author: {
       name: 'Alice C.',
-      avatar: '/images/avatars/svg/vuero-7.svg',
+      avatar: '/panel/images/avatars/svg/vuero-7.svg',
     },
     followers: [
       {
         id: 1,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
       },
       {
         id: 2,
@@ -243,7 +243,7 @@ export const recipes = [
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
       },
       {
         id: 4,
@@ -285,7 +285,7 @@ export const recipes = [
     followers: [
       {
         id: 1,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
       },
       {
         id: 2,
@@ -293,7 +293,7 @@ export const recipes = [
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
       },
       {
         id: 4,
@@ -330,7 +330,7 @@ export const recipes = [
     attachments: 1,
     author: {
       name: 'Joshua S.',
-      avatar: '/images/avatars/svg/vuero-12.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
     },
     followers: [
       {
@@ -380,12 +380,12 @@ export const recipes = [
     attachments: 1,
     author: {
       name: 'Joshua S.',
-      avatar: '/images/avatars/svg/vuero-12.svg',
+      avatar: '/panel/images/avatars/svg/vuero-12.svg',
     },
     followers: [
       {
         id: 1,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
       },
       {
         id: 2,
@@ -443,7 +443,7 @@ export const recipes = [
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
       },
       {
         id: 4,

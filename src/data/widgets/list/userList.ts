@@ -8,14 +8,14 @@ export const userList = [
   },
   {
     id: 1,
-    picture: '/images/avatars/svg/vuero-5.jpg',
+    picture: '/panel/images/avatars/svg/vuero-5.jpg',
     name: 'Mary Lebowski',
     position: 'Project Manager',
     progress: 22,
   },
   {
     id: 2,
-    picture: '/images/avatars/svg/vuero-1.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
     name: 'Erik Kovalsky',
     position: 'Product Manager',
     progress: -12,

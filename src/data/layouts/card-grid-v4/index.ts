@@ -110,7 +110,7 @@ export const posts = [
     image: '/demo/photos/20.jpg',
     author: {
       id: 8,
-      avatar: '/images/avatars/svg/vuero-1.svg',
+      avatar: '/panel/images/avatars/svg/vuero-1.svg',
       name: 'Erik K.',
       initials: 'EK',
       color: 'info',
@@ -188,7 +188,7 @@ export const posts = [
     image: '/demo/photos/26.jpg',
     author: {
       id: 5,
-      avatar: '/images/avatars/svg/vuero-5.jpg',
+      avatar: '/panel/images/avatars/svg/vuero-5.jpg',
       name: 'Mary L.',
       initials: 'ML',
       color: 'info',

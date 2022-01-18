@@ -39,9 +39,9 @@ import { activePanel } from '/@src/state/activePanelState'
 
             <div class="participants-inner">
               <div class="avatar-stack">
-                <VAvatar picture="/images/avatars/svg/vuero-7.svg" />
-                <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-                <VAvatar picture="/images/avatars/svg/vuero-5.jpg" />
+                <VAvatar picture="/panel/images/avatars/svg/vuero-7.svg" />
+                <VAvatar picture="/panel/images/avatars/svg/vuero-1.svg" />
+                <VAvatar picture="/panel/images/avatars/svg/vuero-5.jpg" />
               </div>
 
               <button>
@@ -147,7 +147,7 @@ import { activePanel } from '/@src/state/activePanelState'
                 <div class="avatar-stack">
                   <VAvatar
                     size="small"
-                    picture="/images/avatars/svg/vuero-1.svg"
+                    picture="/panel/images/avatars/svg/vuero-1.svg"
                   />
                 </div>
               </div>

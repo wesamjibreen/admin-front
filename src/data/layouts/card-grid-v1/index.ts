@@ -7,8 +7,8 @@ export const users = [
     role: 'UI/UX Designer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/images/avatars/svg/vuero-13.svg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-13.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 65,
     social: [
@@ -77,7 +77,7 @@ export const users = [
     role: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/images/avatars/svg/vuero-25.svg',
+      avatar: '/panel/images/avatars/svg/vuero-25.svg',
       badge: '/images/icons/stacks/js.svg',
     },
     progress: 58,
@@ -148,7 +148,7 @@ export const users = [
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
       avatar: '/images/avatars/39.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 28,
     social: [
@@ -287,8 +287,8 @@ export const users = [
     role: 'Project Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/images/avatars/svg/vuero-5.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      avatar: '/panel/images/avatars/svg/vuero-5.jpg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 29,
     social: [
@@ -323,7 +323,7 @@ export const users = [
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
       avatar: '/images/avatars/32.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 91,
     social: [
@@ -463,7 +463,7 @@ export const users = [
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
       avatar: '/images/avatars/16.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 78,
     social: [
@@ -498,7 +498,7 @@ export const users = [
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
       avatar: '/images/avatars/23.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 36,
     social: [
@@ -567,7 +567,7 @@ export const users = [
     role: 'Software Engineer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: '/images/avatars/svg/vuero-7.svg',
+      avatar: '/panel/images/avatars/svg/vuero-7.svg',
       badge: '/images/icons/stacks/csharp.svg',
     },
     progress: 78,
@@ -603,7 +603,7 @@ export const users = [
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
       avatar: '/images/avatars/22.jpg',
-      badge: '/images/icons/flags/united-states-of-america.svg',
+      badge: '/panel/images/icons/flags/united-states-of-america.svg',
     },
     progress: 17,
     social: [

@@ -3,15 +3,15 @@ export const users = [
     id: 0,
     username: 'Erik K.',
     position: 'Product Manager',
-    picture: '/images/avatars/svg/vuero-1.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-1.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Software',
     status: 'Online',
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -23,13 +23,13 @@ export const users = [
       },
       {
         id: 2,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         initials: 'EK',
         color: 'h-purple',
       },
       {
         id: 3,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -46,7 +46,7 @@ export const users = [
     username: 'Jimmy H.',
     position: 'Project Manager',
     picture: '/images/avatars/22.jpg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Business',
     status: 'Working',
@@ -63,8 +63,8 @@ export const users = [
     id: 2,
     username: 'Melany W.',
     position: 'Web Developer',
-    picture: '/images/avatars/svg/vuero-25.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-25.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'San Jose, CA',
     industry: 'Design',
     status: 'Online',
@@ -77,7 +77,7 @@ export const users = [
       },
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -111,15 +111,15 @@ export const users = [
     id: 3,
     username: 'Joshua S.',
     position: 'Backend Developer',
-    picture: '/images/avatars/svg/vuero-12.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-12.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Accounting',
     status: 'Suspended',
     contacts: [
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         initials: 'TS',
         color: 'info',
       },
@@ -129,15 +129,15 @@ export const users = [
     id: 4,
     username: 'Tara S.',
     position: 'UI/UX Designer',
-    picture: '/images/avatars/svg/vuero-13.svg',
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    picture: '/panel/images/avatars/svg/vuero-13.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Finance',
     status: 'Working',
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -149,7 +149,7 @@ export const users = [
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -191,7 +191,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -203,7 +203,7 @@ export const users = [
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -239,7 +239,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
@@ -251,7 +251,7 @@ export const users = [
       },
       {
         id: 8,
-        picture: '/images/avatars/svg/vuero-1.svg',
+        picture: '/panel/images/avatars/svg/vuero-1.svg',
         initials: 'ML',
         color: 'warning',
       },
@@ -281,19 +281,19 @@ export const users = [
     contacts: [
       {
         id: 25,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 13,
-        picture: '/images/avatars/svg/vuero-13.svg',
+        picture: '/panel/images/avatars/svg/vuero-13.svg',
         initials: 'TS',
         color: 'info',
       },
       {
         id: 17,
-        picture: '/images/avatars/svg/vuero-5.jpg',
+        picture: '/panel/images/avatars/svg/vuero-5.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -304,7 +304,7 @@ export const users = [
     username: 'Alan T.',
     position: 'Software Engineer',
     picture: undefined,
-    badge: '/images/icons/flags/united-states-of-america.svg',
+    badge: '/panel/images/icons/flags/united-states-of-america.svg',
     color: 'h-yellow',
     initials: 'AT',
     location: 'San Francisco, CA',
@@ -313,7 +313,7 @@ export const users = [
     contacts: [
       {
         id: 25,
-        picture: '/images/avatars/svg/vuero-25.svg',
+        picture: '/panel/images/avatars/svg/vuero-25.svg',
         initials: 'MW',
         color: 'info',
       },
@@ -331,7 +331,7 @@ export const users = [
     contacts: [
       {
         id: 7,
-        picture: '/images/avatars/svg/vuero-7.svg',
+        picture: '/panel/images/avatars/svg/vuero-7.svg',
         initials: 'AC',
         color: 'info',
       },

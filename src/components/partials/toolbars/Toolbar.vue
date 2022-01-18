@@ -3,13 +3,14 @@ import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import { isDark, toggleDarkModeHandler } from '../../../state/darkModeState'
-import { activePanel } from '../../../state/activePanelState'
+import { activePanel } from '../../../state/activePanelState';
 import useDropdown from '../../../composable/useDropdown'
 
 const { locale } = useI18n()
 const dropdownElement = ref()
 const dropdown = useDropdown(dropdownElement)
-
+import  useCountry from "../../../composable/useCountry";
+const {countries, country,defaultCountry ,countryObject,flagUrl} = useCountry();
 const localFlagSrc = computed(() => {
   switch (locale.value) {
     case 'fr':
@@ -24,7 +25,7 @@ const localFlagSrc = computed(() => {
       return '/images/icons/flags/china.svg'
     case 'en':
     default:
-      return '/images/icons/flags/united-states-of-america.svg'
+      return '/panel/images/icons/flags/united-states-of-america.svg'
   }
 })
 </script>
@@ -42,11 +43,10 @@ const localFlagSrc = computed(() => {
       </label>
     </div>
 
-    <a
-      class="toolbar-link right-panel-trigger"
-      @click="activePanel = 'languages'"
-    >
-      <img :src="localFlagSrc" alt="" />
+    <a class="toolbar-link right-panel-trigger"
+      @click="activePanel = 'countries'">
+
+      <img :src="flagUrl" alt="" />
     </a>
 
     <slot></slot>

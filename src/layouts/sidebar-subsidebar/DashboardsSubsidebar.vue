@@ -1,34 +1,29 @@
-<script>
-
-    export default {
-        emits: ["close"], // <--- add this line
-        setup({emit}) {
-            return {emit}
-        }
-    };
-    // const emit = defineEmits(['close'])
-</script>
-
 <template>
     <div class="sidebar-panel is-generic">
         <div class="subpanel-header">
-            <h3 class="no-mb">Dashboards</h3>
-            <div class="panel-close" @click="emit('close')">
+            <h3 class="no-mb">{{ title }}</h3>
+            <div class="panel-close" @click="$emit('close')">
                 <i aria-hidden="true" class="iconify" data-icon="feather:x"></i>
             </div>
         </div>
         <div class="inner" data-simplebar>
             <ul>
-                <li>
-                    <RouterLink :to="{ name: 'dashboard' }">
-                        <i aria-hidden="true" class="lnil lnil-home pr-2"></i>
-                        Home
+                <li v-for="item in items" @click="$emit('close')">
+                    <RouterLink v-bind="item">
+                        <i aria-hidden="true" :class="`${item.icon} pr-2`"></i>
+                        {{ trans(item.label) }}
                     </RouterLink>
                 </li>
             </ul>
         </div>
     </div>
 </template>
+<script>
+    import {sidebar} from "../../mixins"
+    export default {
+     mixins : [sidebar]
+    }
+</script>
 
 <style lang="scss">
     @import '../../scss/layout/_sidebar-panel.scss';

@@ -98,10 +98,10 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+                <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
                 <VAvatar
                   size="small"
-                  picture="/images/avatars/svg/vuero-1.svg"
+                  picture="/panel/images/avatars/svg/vuero-1.svg"
                 />
                 <VAvatar size="small" color="danger" initials="DC" />
               </div>
@@ -143,7 +143,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-25.svg" />
+                <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-25.svg" />
               </div>
             </div>
             <div class="foot-block">
@@ -183,7 +183,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-7.svg" />
+                <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-7.svg" />
                 <VAvatar size="small" picture="/images/avatars/23.jpg" />
               </div>
             </div>
@@ -266,7 +266,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-12.svg" />
+                <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-12.svg" />
               </div>
             </div>
             <div class="foot-block">
@@ -390,7 +390,7 @@
             <div class="foot-block">
               <h4 class="heading">Developers</h4>
               <div class="developers">
-                <VAvatar size="small" picture="/images/avatars/svg/vuero-25.svg" />
+                <VAvatar size="small" picture="/panel/images/avatars/svg/vuero-25.svg" />
                 <VAvatar size="small" color="info" initials="ET" />
               </div>
             </div>

@@ -27,7 +27,7 @@ const localFlagSrc = computed(() => {
       return '/images/icons/flags/china.svg'
     case 'en':
     default:
-      return '/images/icons/flags/united-states-of-america.svg'
+      return '/panel/images/icons/flags/united-states-of-america.svg'
   }
 })
 </script>
@@ -83,7 +83,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/svg/vuero-7.svg"
+                      src="/panel/images/avatars/svg/vuero-7.svg"
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
                       "
@@ -103,7 +103,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/svg/vuero-12.svg"
+                      src="/panel/images/avatars/svg/vuero-12.svg"
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
                       "
@@ -123,7 +123,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/svg/vuero-13.svg"
+                      src="/panel/images/avatars/svg/vuero-13.svg"
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
                       "
@@ -143,7 +143,7 @@ const localFlagSrc = computed(() => {
                     <img
                       class="user-photo"
                       alt=""
-                      src="/images/avatars/svg/vuero-25.svg"
+                      src="/panel/images/avatars/svg/vuero-25.svg"
                       @error.once="
                         (event) => useViaPlaceholderError(event, '150x150')
                       "

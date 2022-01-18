@@ -35,7 +35,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 
       <!--Widget-->
       <ContactWidget
-        picture="/images/avatars/svg/vuero-1.svg"
+        picture="/panel/images/avatars/svg/vuero-1.svg"
         username="Erik K."
         email="erikkovalsky@vuero.io"
         company="Vuero Ltd."
@@ -116,7 +116,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
 
       <!--Widget-->
       <ContactWidget
-        picture="/images/avatars/svg/vuero-1.svg"
+        picture="/panel/images/avatars/svg/vuero-1.svg"
         username="Erik K."
         email="erikkovalsky@vuero.io"
         company="Vuero Ltd."
@@ -155,7 +155,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
       <!--Widget-->
       <CallWidget
         picture="/@src/assets/illustrations/widgets/6.svg"
-        badge="/images/avatars/svg/vuero-7.svg"
+        badge="/panel/images/avatars/svg/vuero-7.svg"
         username="Alice"
       />
 

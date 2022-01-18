@@ -111,7 +111,7 @@ const onSave = async () => {
                           {
                             value: 'english',
                             name: 'English',
-                            icon: '/images/icons/flags/united-states-of-america.svg',
+                            icon: '/panel/images/icons/flags/united-states-of-america.svg',
                           },
                           {
                             value: 'french',
@@ -219,7 +219,7 @@ const onSave = async () => {
             <!--Experience Item-->
             <div class="setting-item">
               <VIconWrap
-                picture="/images/icons/flags/united-states-of-america.svg"
+                picture="/panel/images/icons/flags/united-states-of-america.svg"
               />
 
               <div class="meta">

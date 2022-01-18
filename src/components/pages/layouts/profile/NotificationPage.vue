@@ -12,7 +12,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="/images/avatars/svg/vuero-13.svg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-13.svg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -26,7 +26,7 @@
               <div class="box-end">
                 <VAvatar
                   size="small"
-                  picture="/images/avatars/svg/vuero-1.svg"
+                  picture="/panel/images/avatars/svg/vuero-1.svg"
                 />
               </div>
             </div>
@@ -66,7 +66,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="/images/avatars/svg/vuero-5.jpg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-5.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -95,7 +95,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="/images/avatars/svg/vuero-12.svg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-12.svg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -172,7 +172,7 @@
               <div class="box-end">
                 <VAvatar
                   size="small"
-                  picture="/images/avatars/svg/vuero-1.svg"
+                  picture="/panel/images/avatars/svg/vuero-1.svg"
                 />
               </div>
             </div>
@@ -188,7 +188,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="/images/avatars/svg/vuero-13.svg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-13.svg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -212,7 +212,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="/images/avatars/svg/vuero-25.svg" />
+              <VAvatar picture="/panel/images/avatars/svg/vuero-25.svg" />
 
               <div class="box-text">
                 <div class="meta-text">

@@ -21,7 +21,7 @@ const emit = defineEmits(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="/images/avatars/svg/vuero-7.svg"
+          src="/panel/images/avatars/svg/vuero-7.svg"
           alt=""
           data-user-popover="0"
           @error.once="(event) => useViaPlaceholderError(event, '150x150')"
@@ -33,7 +33,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/svg/vuero-7.svg"
+            src="/panel/images/avatars/svg/vuero-7.svg"
             alt=""
             data-user-popover="0"
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"
@@ -68,7 +68,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="/images/avatars/svg/vuero-1.svg"
+            src="/panel/images/avatars/svg/vuero-1.svg"
             alt=""
             data-user-popover="3"
             @error.once="(event) => useViaPlaceholderError(event, '150x150')"

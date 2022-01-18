@@ -82,8 +82,8 @@ onMounted(async () => {
         <div class="dashboard-card is-company">
           <VAvatar
             size="big"
-            picture="/demo/photos/brands/udemy.svg"
-            picture-dark="/demo/photos/brands/udemy-dark.svg"
+            picture="/assets/illustrations/landing/feature-2.svg"
+            picture-dark="/assets/illustrations/landing/feature-2.svg"
           >
             <template #badge>
               <button class="button icon-button is-circle is-dark-outlined">
@@ -432,7 +432,7 @@ onMounted(async () => {
                   <!--:offset="[0, 10]"-->
                   <!--placement="top-start"-->
                 <!--&gt;-->
-                  <!--<VAvatar size="medium" picture="/images/avatars/svg/vuero-13.svg" />-->
+                  <!--<VAvatar size="medium" picture="/panel/images/avatars/svg/vuero-13.svg" />-->
                   <!--<template #content>-->
                     <!--<UserPopoverContent :user="popovers.user13" />-->
                   <!--</template>-->
